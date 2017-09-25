@@ -53,9 +53,8 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   2. `cp config.properties.in config.properties`
   3. Edit the config.properties file (ensure that you put the full path to the polyglot directory):
       
-    ```java
-    public static void 
-    ```
+```java
+
     # Jif configuration properties.
 
     # Base directory of Polyglot installation.
@@ -76,7 +75,7 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
 
     # You may need something like the following on Mac OS
     jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
-    ```
+```
       
   4. `ant configure`
   5. `ant`
@@ -88,7 +87,8 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
     * Download the JCE package matching your version of Java: [JCE.jar 8](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
   2. `cp config.properties.in config.properties`
   3. Edit the config.properties file (ensure that you put the full path to the respective directories)
-    ```java
+  
+```java
     # Fabric configuration properties.
 
 
@@ -133,7 +133,7 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
     # Fabric distribution is used.
 
     polyglot.home=<path>/polyglot
-     ```
+```
      
     4. `ant configure`
     5. `ant`
