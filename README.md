@@ -91,7 +91,6 @@ jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_1
 ```
 # Fabric configuration properties.
 
-
 # JDK installation directory
 #
 # This is optional. If not set, then the following values are used, in
