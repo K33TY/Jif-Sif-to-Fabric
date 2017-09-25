@@ -80,12 +80,12 @@ jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_1
 ```xml
 <javac source="1.7" target="1.7" srcdir="${rt-src}" destdir="${rt-classes}" encoding="UTF-8" debug="on" includes="**" includeantruntime="false">
 ```
-     and line 1017:
+  5. Edit line 1017 to be:
 ```xml
 <javac source="1.7" target="1.7" srcdir="${ext.basedir}/src" destdir="${classes}" encoding="UTF-8" debug="on" includes="${ext}/**" includeantruntime="false">
 ```
-  5. `ant configure`
-  6. `ant`
+  6. `ant configure`
+  7. `ant`
 
 ## Fabric
 
