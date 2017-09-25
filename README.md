@@ -27,7 +27,7 @@ The current specifications used for this installation. (It is probable that diff
 
 ## Edit ~/.bash_profile
 
-This ensures that the necessary environment variables, paths, and classpaths are set (Note, you need to change \<path\> to the actual paths to the respective folders):
+This ensures that the necessary environment variables, paths, and classpaths are set (Note, you need to change \<path\> to the actual paths to the respective directories):
 
 ```
 ~/.bash_profile 
