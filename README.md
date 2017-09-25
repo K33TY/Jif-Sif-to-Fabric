@@ -53,28 +53,28 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   2. `cp config.properties.in config.properties`
   3. Edit the config.properties file (ensure that you put the full path to the polyglot directory):
       
-```java
+```
 
-    # Jif configuration properties.
+# Jif configuration properties.
 
-    # Base directory of Polyglot installation.
-    #
-    #   This is optional if the Polyglot JARs are in the lib directory.
-    #   Must be an absolute path.
-    #
-    polyglot.home=<path>/polyglot
+# Base directory of Polyglot installation.
+#
+#   This is optional if the Polyglot JARs are in the lib directory.
+#   Must be an absolute path.
+#
+polyglot.home=<path>/polyglot
 
 
-    # JDK installation directory.
-    #
-    jdk.home=${java.home} 
+# JDK installation directory.
+#
+jdk.home=${java.home} 
 
-    # The following may work better if you have the JAVA_HOME environment variable
-    # defined:
-    # jdk.home=${env.JAVA_HOME}
+# The following may work better if you have the JAVA_HOME environment variable
+# defined:
+# jdk.home=${env.JAVA_HOME}
 
-    # You may need something like the following on Mac OS
-    jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
+# You may need something like the following on Mac OS
+jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
 ```
       
   4. `ant configure`
@@ -89,50 +89,50 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   3. Edit the config.properties file (ensure that you put the full path to the respective directories)
   
 ```java
-    # Fabric configuration properties.
+# Fabric configuration properties.
 
 
-    # JDK installation directory
-    #
-    # This is optional. If not set, then the following values are used, in
-    # order of precedence:
-    #
-    #   1. The jdk.home property from config.properties in Jif's source
-    #      tree. (This does not exist when using Jif from a jar file.)
-    #
-    #   2. The JAVA_HOME environment variable.
-    #
-    #   3. The output of the following BASH command (if successful):
-    #
-    #          readlink -f $(which javac) \
-    #            | sed '/\/bin\/javac$/{s|/bin/javac$||;q}; q1'
-    #
-    #      (The above sed expression is the same as 's|/bin/javac$||',
-    #      except it returns with exit code 1 if the substitution is
-    #      unsuccessful.)
-    #
-    #   4. Ant's built-in java.home property (on some systems, this points
-    #      to the JRE, and not the JDK).
-    #
-    # The commented example below uses Ant's built-in java.home property.
+# JDK installation directory
+#
+# This is optional. If not set, then the following values are used, in
+# order of precedence:
+#
+#   1. The jdk.home property from config.properties in Jif's source
+#      tree. (This does not exist when using Jif from a jar file.)
+#
+#   2. The JAVA_HOME environment variable.
+#
+#   3. The output of the following BASH command (if successful):
+#
+#          readlink -f $(which javac) \
+#            | sed '/\/bin\/javac$/{s|/bin/javac$||;q}; q1'
+#
+#      (The above sed expression is the same as 's|/bin/javac$||',
+#      except it returns with exit code 1 if the substitution is
+#      unsuccessful.)
+#
+#   4. Ant's built-in java.home property (on some systems, this points
+#      to the JRE, and not the JDK).
+#
+# The commented example below uses Ant's built-in java.home property.
 
-    jdk.home=${env.JAVA_HOME}
-
-
-    # Jif installation directory
-    #
-    # This is optional. By default, the copy of Jif included in the Fabric
-    # distribution is used.
-
-    jif.home=<path>/jif
+jdk.home=${env.JAVA_HOME}
 
 
-    # Polyglot installation directory
-    #
-    # This is optional. By default, the copy of Polyglot included in the
-    # Fabric distribution is used.
+# Jif installation directory
+#
+# This is optional. By default, the copy of Jif included in the Fabric
+# distribution is used.
 
-    polyglot.home=<path>/polyglot
+jif.home=<path>/jif
+
+
+# Polyglot installation directory
+#
+# This is optional. By default, the copy of Polyglot included in the
+# Fabric distribution is used.
+
+polyglot.home=<path>/polyglot
 ```
      
     4. `ant configure`
