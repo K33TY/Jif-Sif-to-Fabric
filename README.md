@@ -17,6 +17,11 @@ I previously attempted to install this environment on Mac OS Yosemite 10.10.5, b
 
 ## Prerequisites
 
+The current specifications used for this installation. (It is probable that different operating systems and earlier/later versions of Java JDK will work, but I managed with the following settings.)
+
+* Mac OS Sierra 10.12.6
+* Oracle Java JDK v 1.8.0_101-b13
+
 ## Ant
 
 ## Polyglot
