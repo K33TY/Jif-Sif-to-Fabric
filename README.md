@@ -27,15 +27,15 @@ The current specifications used for this installation. (It is probable that diff
 
 ## Edit ~/.bash_profile
 
-This ensures that the necessary environment variables, paths, and classpaths are set (Note, you need to change <Your User> to your actual username):
+This ensures that the necessary environment variables, paths, and classpaths are set (Note, you need to change <path> to the actual paths to the respective folders):
 
 ```
 ~/.bash_profile 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_101)
-export ANT_HOME=/Users/<Your User>/Desktop/MEng_Project/apache-ant-1.10.1
-export POLYGLOT=/Users/<Your User>/Desktop/MEng_Project/polyglot
-export JIF=/Users/<Your User>/Desktop/MEng_Project/jif
-export FABRIC=/Users/<Your User>/Desktop/MEng_Project/fabric
+export ANT_HOME=<path>/apache-ant-1.10.1
+export POLYGLOT=<path>/polyglot
+export JIF=<path>/jif
+export FABRIC=<path>/fabric
 export PATH="$PATH:/usr/local/bin:${ANT_HOME}/bin:${POLYGLOT}/bin:${JAVA_HOME}/bin"
 export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/lib/java_cup.jar:${POLYGLOT}/lib/polyglot.jar:${POLYGLOT}/lib/jflex.jar:${JAVA_HOME}
 ```
