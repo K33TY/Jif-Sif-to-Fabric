@@ -135,6 +135,6 @@ jif.home=<path>/jif
 polyglot.home=<path>/polyglot
 ```
      
-    4. `ant configure`
-    5. `ant`
+  4. `ant configure`
+  5. `ant`
   
