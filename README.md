@@ -42,6 +42,10 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
 
 ## Polyglot
 
+  1. Ensure javac is in your path and that JFlex.jar is in your classpath or in the Polyglot lib directory
+  2. cd $POLYGLOT
+  3. ant
+  4. If you run *jlc*, then you will be able to tell if it is running correctly. (I had no issues once upgrading to Sierra)
 
 ## Jif
 
