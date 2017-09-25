@@ -53,27 +53,27 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   2. `cp config.properties.in config.properties`
   3. Edit the config.properties file (ensure that you put the full path to the polyglot directory):
       
-     ```
-# Jif configuration properties.
+     ```Java
+    # Jif configuration properties.
 
-# Base directory of Polyglot installation.
-#
-#   This is optional if the Polyglot JARs are in the lib directory.
-#   Must be an absolute path.
-#
-polyglot.home=<path>/polyglot
+    # Base directory of Polyglot installation.
+    #
+    #   This is optional if the Polyglot JARs are in the lib directory.
+    #   Must be an absolute path.
+    #
+    polyglot.home=<path>/polyglot
 
 
-# JDK installation directory.
-#
-jdk.home=${java.home} 
+    # JDK installation directory.
+    #
+    jdk.home=${java.home} 
 
-# The following may work better if you have the JAVA_HOME environment variable
-# defined:
-# jdk.home=${env.JAVA_HOME}
+    # The following may work better if you have the JAVA_HOME environment variable
+    # defined:
+    # jdk.home=${env.JAVA_HOME}
 
-# You may need something like the following on Mac OS
-jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
+    # You may need something like the following on Mac OS
+    jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
      ```
       
   4. `ant configure`
