@@ -54,6 +54,8 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   3. Edit the config.properties file (ensure that you put the full path to the polyglot directory):
       
     ```java
+    public static void 
+    ```
     # Jif configuration properties.
 
     # Base directory of Polyglot installation.
