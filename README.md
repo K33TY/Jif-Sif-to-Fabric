@@ -76,8 +76,16 @@ jdk.home=${java.home}
 jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/include/darwin
 ```
       
-  4. `ant configure`
-  5. `ant`
+  4. Edit build.xml line 465 to be:
+```xml
+<javac source="1.7" target="1.7" srcdir="${rt-src}" destdir="${rt-classes}" encoding="UTF-8" debug="on" includes="**" includeantruntime="false">
+```
+     and line 1017:
+```xml
+<javac source="1.7" target="1.7" srcdir="${ext.basedir}/src" destdir="${classes}" encoding="UTF-8" debug="on" includes="${ext}/**" includeantruntime="false">
+```
+  5. `ant configure`
+  6. `ant`
 
 ## Fabric
 
