@@ -88,7 +88,7 @@ jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_1
   2. `cp config.properties.in config.properties`
   3. Edit the config.properties file (ensure that you put the full path to the respective directories)
   
-```java
+```
 # Fabric configuration properties.
 
 
