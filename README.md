@@ -23,8 +23,7 @@ The current specifications used for this installation. (It is probable that diff
 
 * Mac OS Sierra 10.12.6
 * Oracle Java JDK v 1.8.0_101-b13
-
-## Ant
+* [Apache Ant](http://ant.apache.org/) : Install as per provided instructions
 
 ## Polyglot
 
