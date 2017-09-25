@@ -54,7 +54,6 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
   3. Edit the config.properties file (ensure that you put the full path to the polyglot directory):
       
 ```
-
 # Jif configuration properties.
 
 # Base directory of Polyglot installation.
@@ -90,6 +89,7 @@ jif-runtime-native.java-include-dir=/Library/Java/JavaVirtualMachines/jdk1.8.0_1
   
 ```
 # Fabric configuration properties.
+
 
 # JDK installation directory
 #
