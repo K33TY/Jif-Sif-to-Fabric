@@ -4,9 +4,10 @@ Installation configurations that work on Mac OSX.
 [TL;DR Skip Down to Installation instructions](https://github.com/K33TY/Polyglot-Jif-Fabric-Stack/blob/master/README.md#prerequisites)
 
 ### Information about this Stack
-  *[Polyglot](https://www.cs.cornell.edu/projects/polyglot/)
-  *[Jif](https://www.cs.cornell.edu/jif/)
-  *[Fabric](https://www.cs.cornell.edu/projects/fabric/)
+
+ * [Polyglot](https://www.cs.cornell.edu/projects/polyglot/)
+ * [Jif](https://www.cs.cornell.edu/jif/)
+ * [Fabric](https://www.cs.cornell.edu/projects/fabric/)
 
 ### Installation Backstory
 
