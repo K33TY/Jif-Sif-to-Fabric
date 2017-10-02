@@ -15,7 +15,7 @@ Here we have an overview of the Sif calendar's functionality<sup>[1](https://www
   
 Definition: A user's calendar is the set of all events for which the user is either the creator or attendee. 
 
-#### Capabilities
+#### Application Capabilities
 
   1. Update session state with date to display
   2. Update session state with which user's calendar to display
