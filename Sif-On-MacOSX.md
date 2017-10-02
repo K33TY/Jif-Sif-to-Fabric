@@ -187,6 +187,15 @@ Notes for developing SIF Web apps
 ### Issues
 
 ##### Step 1:
-After installing Tomcat, which is a prerequisite for Sif,  I followed the steps of creating the necessary jars for JIF as per the read me. However, there was no "/shared/lib" folder off of my Tomcat directory. There was only a "/lib" directory. I was not sure whether to create said directory or simply copy the necessary files into the "/lib" directory. 
+After installing Tomcat, which is a prerequisite for Sif,  I followed the steps of creating the necessary jars for JIF as per the read me. However, there was no `/shared/lib` folder off of my Tomcat directory. There was only a `/lib` directory. I was not sure whether to create said directory or simply copy the necessary files into the `/lib` directory. 
   
-Another issue I had dealt with the fact that setenv is not actually a command that can be run on MacOSX. Instead, I followed the procedure I used to set environment variables for the other applications I had previously installed by editing ~/.bash_profile, making it contain `export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$JIF/lib`
+Another issue I had dealt with the fact that setenv is not actually a command that can be run on MacOSX. Instead, I followed the procedure I used to set environment variables for the other applications I had previously installed by editing `~/.bash_profile`, making it contain `export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$JIF/lib`
+
+##### Step 2:
+Again with the previous step, I am putting the necessary third party jars into `/lib` instead of `/shared/lib` as that directory does not exist.
+
+##### Step 3:
+Though the instructions was not clear about where I should run the command `ant install-quick`, I assumed it should be from the `$SIF` directory. I could not run the `ant install-quick` command because the `$SIF/classes` directory does not exist. I created the directory and tried again. After doing this, the build was successful.
+
+##### Step 4:
+The installation did not work because Sif could not find the necessary packages. It seems that the instructions in above steps were incorrect in stating that I could simply put the necessary jars into the Tomcat directory rather than putting them also in the `$SIF` directory. Once I copied these jars into `/lib`, the build was successful.
