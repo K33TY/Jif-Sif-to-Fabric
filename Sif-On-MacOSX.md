@@ -1,5 +1,7 @@
 # Installing Sif on Mac OSX
 
+Below I have provided the Sif 1.0.3 distribution's read me file, and my experience following this on MacOSX:
+
 ### READ ME
 
 ```
@@ -182,5 +184,7 @@ Notes for developing SIF Web apps
    call the appropriate translation of the constructor).
 ```
 
-After installing Tomcat, which is a prerequisite for Sif, 
-I followed the steps of creating the necessary jars for JIF as per the read me.
+### Issues
+
+    1. After installing Tomcat, which is a prerequisite for Sif,  I followed the steps of creating the necessary jars for JIF as per the read me. However, there was no "/shared/lib" folder off of my Tomcat directory. There was only a "/lib" directory. I was not sure whether to create said directory or simply copy the necessary files into the "/lib" directory. 
+    Another issue I had dealt with the fact that setenv is not actually a command that can be run on MacOSX. Instead, I followed the procedure I used to set environment variables for the other applications I had previously installed by editing ~/.bash_profile, making it contain `export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$JIF/lib`
