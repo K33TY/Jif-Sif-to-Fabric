@@ -1,6 +1,6 @@
 # Installing Sif on Mac OSX
 
-Below I have provided the Sif 1.0.3 distribution's read me file, and my experience following this on MacOSX:
+Below I have provided the Sif 1.0.3 distribution's read me file, and my experience following this on [MacOSX](https://github.com/K33TY/Polyglot-Jif-Fabric-Stack/edit/master/Sif-On-MacOSX.md#Issues):
 
 ### READ ME
 
