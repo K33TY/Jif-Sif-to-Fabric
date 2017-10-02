@@ -1,7 +1,7 @@
 # Polyglot-Jif-Fabric Stack
 Installation configurations that work on Mac OSX. 
 
-[TL;DR Skip Down to Installation instructions](https://github.com/K33TY/Polyglot-Jif-Fabric-Stack/blob/master/README.md#install)
+[TL;DR Skip Down to Installation instructions](https://github.com/K33TY/Polyglot-Jif-Fabric-Stack/blob/master/Polyglot-Jif-Fabric-Stack.md#install)
 
 ### Information about this Stack
 
