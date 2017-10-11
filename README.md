@@ -12,3 +12,8 @@ We review the capabilities of the calendar in the Sif-Jif distribution to ensure
 
  * [Log](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md): <br />
  I decided to start tracking my research on October 9th so that I could keep track of links, relevant info I encountered, and ideas.
+
+# Fabric Calendar Application
+I have a separate private repository to house the code for the Fabric Calendar Application. It is only viewable to people granted access.
+
+[Fabric Calendar Application](https://github.com/K33TY/Fabric-Calendar)
