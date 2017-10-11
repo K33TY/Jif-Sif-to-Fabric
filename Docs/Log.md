@@ -25,6 +25,5 @@ Reading about Java servelets since I have no prior experience with using them.
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
   
-  
-  <span style="color:blue">some *blue* text</span>.
 
+<span style=“color:green;”> text goes here</span>
