@@ -1,6 +1,12 @@
 This file is a timeline of necessary steps of work as of October 9th. 
 More was done prior to this date, but I have not recorded actions.
 
+### Jump to a specific date
+
+ * [Oct 9:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
+ * [Oct 10:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
+ * [Oct 11:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
+
 ### October 9
 Manage to get the Calendar app "sort of" working. I had already set up the mysql server and database two weeks ago, but had been having issues with Tomcat. I switched to Jetty, and started putting all the necessary dependencies in the `$jetty\webapps\calendar\WebINF` directory under the subdirectories `classes` and `lib`.
 
