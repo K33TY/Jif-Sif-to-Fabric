@@ -30,10 +30,15 @@ These all the Java files, which are found in `web/WEB-INT/classes/calendar`, are
 I reformatted the longest file, the 6315 line `ShowCalendarSessAction.java` file, to be 4366 lines (even after adding many brackets and white space). 
 
 *Example snippet:*
+
 ![not readable](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/notReadable.png "hard to read...")
 
 
 ### October 11
+**Began Git Log file.**
+
+I wanted to have an easy to access place to keep track of my work flow and to save necessary thoughts and links that resulted from this. 
+
 **Reading about Java servelets since I have no prior experience with using them.**
 
 # List of TODOs
