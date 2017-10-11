@@ -1,3 +1,5 @@
 # Dont add tar files
 *.tar
 *.gz
+
+.DS_Store
