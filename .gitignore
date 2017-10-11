@@ -1,0 +1,3 @@
+# Dont add tar files
+*.tar
+*.gz
