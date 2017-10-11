@@ -7,6 +7,10 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
  * [Oct 11](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
  
+## Jump to TODO List or Finished Task List.
+
+I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) which I will add tasks that I need to remember to do later. Once I am done with any of these tasks, I will move it to the [Finished Task List](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks).
+ 
 -------------
 
 ## October 9
@@ -54,4 +58,8 @@ I wanted to have an easy to access place to keep track of my work flow and to sa
   * Research how to create Jetty webapp that does not need dependencies directly put into application folder and can be put in a shared location
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
+  
+-------------
+  
+# Finished Tasks
 
