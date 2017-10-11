@@ -1,10 +1,7 @@
 # From Jif-Sif to Fabric
 This repo contains the necessary steps for setting up the environment for a calendar porting project.
 
-  * [Polyglot-Jif-Fabric Stack](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Polyglot-Jif-Fabric-Stack.md): <br />
-The application stack for running Fabric. 
-
-  * [Installing the Polyglot-Jif-Fabric Stack on MacOSX](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/README_MacOS_Install.md): <br />
+  * [Installing the Polyglot-Jif-Fabric Stack on MacOSX](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Polyglot-Jif-Fabric-Stack.md): <br />
 Documenting the necessary steps that I needed to follow to get Fabric installed. 
 
   * [Sif on MacOSX](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Sif-On-MacOSX.md): <br />
