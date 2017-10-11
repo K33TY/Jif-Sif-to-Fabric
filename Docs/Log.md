@@ -26,7 +26,6 @@ Thus, I also do not know if I am able to delete or edit calendar events. I notic
 The code for the Jif-Sif distribution of the calendar has significant readability concerns. There were many nested if statements without brackets, and it was difficult to tell which portions of code belonged where because of the excessive use of newline characters. I reformatted the longest file, the 6315 line `ShowCalendarSessAction.java` file, to be 4366 lines (even after adding many brackets and white space). 
 
 ![not readable](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/notReadable.png "hard to read...")
-![not readable](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/notReadable2.png "another example...")
 
 These all the Java files, which are found in `web/WEB-INT/classes/calendar`, are formatted in this hard to read way, and I could not tell what was going on until I fixed this. As it took some time with the longer file, I may not do all of them in one day, and I am also considering trying to build the calendar from scratch and add functionality instead of trying to specifically 'port' this calendar's functionality in a method-to-method manner.
 
