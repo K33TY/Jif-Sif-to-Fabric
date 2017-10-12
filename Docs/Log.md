@@ -19,7 +19,7 @@ I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/mas
 
 I had already set up the mysql server and database two weeks ago, but had been having issues with Tomcat. I switched to Jetty, and started putting all the necessary dependencies in the `$jetty\webapps\calendar\WebINF` directory under the subdirectories `classes` and `lib`.
 
-> <span style="color:red">[TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos)</span> At a later date, I will want to figure out how to do this in a higher directory as per the Tomcat examples (which weren't working). However, as of now, the webapp was not finding `.jars` that I put in `$jetty\lib` and it was also not registering the `$jetty\shared` directory that I had tried to create (which was a similar issue I was having with Tomcat).
+> [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) At a later date, I will want to figure out how to do this in a higher directory as per the Tomcat examples (which weren't working). However, as of now, the webapp was not finding `.jars` that I put in `$jetty\lib` and it was also not registering the `$jetty\shared` directory that I had tried to create (which was a similar issue I was having with Tomcat).
 
 I had to grab class files from the Jif distribution and `.jar` dependency files each time I loaded the page until I stopped seeing errors. Eventually, I was able to connect to the database and log into the calendar. I was able to manipulate views and view other user's calendars. However, I was not able to add an event to the calendar and got stuck on the following error:
 
@@ -62,12 +62,48 @@ I found that the calendar was lacking in many capabilities outlined in the paper
 
 ## October 12
 **Reading about Java servelets since I have no prior experience with using them.**
+Java Server Page - webpages embedded with Java code requiring a JSP engine such as Tomcat to turn the JSP into a servlet displaying the HTML code embedded within the JSP.
+
+Servlets - unlike JSP are pure Java classes that require that it's classes are within the classpath, and the location depends on the servlet engine.
+
+*The `Servlet` interface* 
+> Note that this is different from SIF's servlet. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Investigate and understand SIF's servelet.
+
+```java
+package javax.servlet;
+
+public interface Servlet
+{ 
+    public void destroy();
+    public ServletConfig getServletConfig();
+    public String getServletInfo();
+    public void init(ServletConfig config)
+        throws ServletException;
+    public void service(ServletRequest request,
+        ServletResponse response)
+        throws ServletException, java.io.IOException;
+}
+```
+
+*Implementing `Servlet` interface* (Two ways): 
+ 1. Subclass from a class taht already implements the interface
+ 2. Implement directly
+ 
+ Some methods:
+  * `service`: is the only method that the servlet **must** implement, and it takes two arguments: the object with information about the browser's request and the object containing information regarding what response to give to the browser. 
+  * `init`: a method that is called just after loading the servlet the first time, since a servlet might need to initialize once before handling any requests (for example to connect to a database). 
+  * `destroy`: is a method to ensure necessary cleanup of open files and closing of database connections and network connections.
+  * `setContentType`: a way to set the content type of the response to `text/html` or `text/xml`
+  * `response.getWriter`: returns the response's writer, and can be used with a `PrintWriter` to be an output stream for writing to the response. 
+  * `response.getOutputStream`: same as getWriter except for binary data 
+  
 
 -------------
 
 # List of TODOs
 
-  * Learn about servelets
+  * Learn about servlets
+  * Learn about SIF's servlet
   * Research how to create Jetty webapp that does not need dependencies directly put into application folder and can be put in a shared location
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
