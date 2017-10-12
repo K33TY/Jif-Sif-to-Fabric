@@ -4,9 +4,15 @@ More was done prior to this date, but I have not recorded actions.
 ## Jump to a specific date
 
  * [Oct 9](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
+   * Manage to get the Calendar app "sort of" working.
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
+   * Reformat significant portions of the code to make it more human readable.
  * [Oct 11](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
+   * Began Git Log file.
+   * Recompile Jif with MeetLbl Method.
+   * Investigated capabilities of the Jif-Sif Calendar Application.
  * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
+   * Reading about Java servelets since I have no prior experience with using them.
  
 ## Jump to TODO List or Finished Task List.
 
