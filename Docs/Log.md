@@ -6,6 +6,7 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 9](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
  * [Oct 11](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
+ * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
  
 ## Jump to TODO List or Finished Task List.
 
@@ -59,6 +60,7 @@ I wound up commenting out the lines 473 and 547 in the build.xml file because I 
 **Investigated capabilities of the Jif-Sif Calendar Application.**
 I found that the calendar was lacking in many capabilities outlined in the paper. Specifically, there is no time indicated in the calendar, so the user only knows the day that the event occurs, but not a time. (Perhaps this is not an issue for an example calendar, but it is something I noticed.) 
 
+## October 12
 **Reading about Java servelets since I have no prior experience with using them.**
 
 -------------
