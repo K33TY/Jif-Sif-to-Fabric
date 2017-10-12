@@ -20,7 +20,7 @@ Definition: A user's calendar is the set of all events for which the user is eit
   1. Update session state with date to display
   2. Update session state with which user's calendar to display
   3. Fresh id for new event
-  4. Update and retrive info from database
+  4. Update and retrieve info from database
   5. Go to View/Edit Event page
   6. Error editing event
   7. Changing attendees or viewers of an event
