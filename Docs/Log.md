@@ -48,6 +48,14 @@ I reformatted the longest file, the 6315 line `ShowCalendarSessAction.java` file
 
 I wanted to have an easy to access place to keep track of my work flow and to save necessary thoughts and links that resulted from this. 
 
+**Recompile Jif with MeetLbl Method.**
+
+Jed let me know that some code had been deleted four years ago, and he pushed changes to the master Jif repository.I could not get this to compile anymore (following my own documentation which I had used previously). 
+
+![not compiling](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/jniHnotFound.png "cannot get this header to add to MacOSX gcc because it apparently claims that clang is throwing an error of not seeing the input files that clearly exist in the directory I tried to use.")
+
+I wound up commenting out the lines 473 and 547 in the build.xml file because I didn't think I would need the unix runtime.
+
 **Reading about Java servelets since I have no prior experience with using them.**
 
 -------------
