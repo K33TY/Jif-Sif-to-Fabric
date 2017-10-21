@@ -13,6 +13,8 @@ More was done prior to this date, but I have not recorded actions.
    * Investigated capabilities of the Jif-Sif Calendar Application.
  * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
    * Reading about Java servelets since I have no prior experience with using them.
+ * [Oct 20](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-20)
+   * Creating attack plan.
  
 ## Jump to TODO List or Finished Task List.
 
@@ -103,12 +105,14 @@ public interface Servlet
   * `response.getWriter`: returns the response's writer, and can be used with a `PrintWriter` to be an output stream for writing to the response. 
   * `response.getOutputStream`: same as getWriter except for binary data 
   
+## October 20
+**Creating attack plan.**
+[Link](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Plan-of-attack.md): This also contains a timeline for what I am hoping to get done when.
 
 -------------
 
 # List of TODOs
 
-  * Learn about servlets
   * Learn about SIF's servlet
   * Research how to create Jetty webapp that does not need dependencies directly put into application folder and can be put in a shared location
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
@@ -118,3 +122,4 @@ public interface Servlet
   
 # Finished Tasks
 
+  * Learn about servlets
