@@ -77,7 +77,7 @@ Java Server Page - webpages embedded with Java code requiring a JSP engine such 
 Servlets - unlike JSP are pure Java classes that require that it's classes are within the classpath, and the location depends on the servlet engine.
 
 *The `Servlet` interface* 
-> Note that this is different from SIF's servlet. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Investigate and understand SIF's servelet.
+> Note that this is different from SIF's servlet. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Investigate and understand SIF's servelet.
 
 ```java
 package javax.servlet;
@@ -125,7 +125,7 @@ I understand that I can start multiple nodes on my machine, and use the provided
 Unsure how data duplicates across multiple storage nodes, and if not, how would a worker node know where to access the object? [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) May need to dig through Fabric source code, because I am confused how it works...
 
 **Missing Functionality**
-The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Will need to see if someone can locate preamble.js file for the SIF Calendar.
+The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Will need to see if someone can locate preamble.js file for the SIF Calendar.
 
 Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. 
 
@@ -137,7 +137,7 @@ Found that preamble.js is in the src folder in sif and not in the example folder
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
   * Dig through Fabric source code to answer some questions that are confusing me
-  * Locate SIF distribution preamble.js file.
+
   
 -------------
   
@@ -145,3 +145,4 @@ Found that preamble.js is in the src folder in sif and not in the example folder
 
   * Learn about servlets in Java
   * Learn about SIF's servlet
+  * Locate SIF distribution preamble.js file.
