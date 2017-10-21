@@ -123,4 +123,4 @@ public interface Servlet
   
 # Finished Tasks
 
-  * Learn about servlets
+  * Learn about servlets in Java
