@@ -15,6 +15,8 @@ More was done prior to this date, but I have not recorded actions.
    * Reading about Java servelets since I have no prior experience with using them.
  * [Oct 20](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-20)
    * Creating attack plan.
+ * [Oct 21](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-21)
+   * Trying to understand Fabric infrastructure.
  
 ## Jump to TODO List or Finished Task List.
 
@@ -110,17 +112,30 @@ public interface Servlet
 
 [Link](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Plan-of-attack.md): This also contains a timeline for what I am hoping to get done when.
 
+## October 21
+**Trying to understand infrastructure.**
+
+Want to make some diagrams for Calendar application so that I have a clear picture of what needs to be programmed. Wonder if this is how remote Fabric method calls work, the syntax for labelling and annotation is not there):
+![Remote Fabric Call](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/FabricRemoteCall.png "remote fabric call")
+
+I'm also trying to understand how Fabric's implementation of the SIF servlet works. Searching for information about the SIF servlet lead me to an [article](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf) that I skimmed through, but it looks like invaluable information and so I am going to print it out and read it more carefully today.
+
+I understand that I can start multiple nodes on my machine, and use the provided CA (which is insecure but probably sufficient for testing), but I'm not sure if this will be sufficient for testing my application. 
+
+Unsure how data duplicates across multiple storage nodes, and if not, how would a worker node know where to access the object? [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) May need to dig through Fabric source code, because I am confused how it works...
+
 -------------
 
 # List of TODOs
 
-  * Learn about SIF's servlet
   * Research how to create Jetty webapp that does not need dependencies directly put into application folder and can be put in a shared location
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
+  * Dig through Fabric source code to answer some questions that are confusing me
   
 -------------
   
 # Finished Tasks
 
   * Learn about servlets in Java
+  * Learn about SIF's servlet
