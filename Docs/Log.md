@@ -124,6 +124,9 @@ I understand that I can start multiple nodes on my machine, and use the provided
 
 Unsure how data duplicates across multiple storage nodes, and if not, how would a worker node know where to access the object? [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) May need to dig through Fabric source code, because I am confused how it works...
 
+**Missing Functionality**
+The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Will need to see if someone can locate preamble.js file for the SIF Calendar.
+
 -------------
 
 # List of TODOs
@@ -132,6 +135,7 @@ Unsure how data duplicates across multiple storage nodes, and if not, how would 
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
   * Dig through Fabric source code to answer some questions that are confusing me
+  * Locate SIF distribution preamble.js file.
   
 -------------
   
