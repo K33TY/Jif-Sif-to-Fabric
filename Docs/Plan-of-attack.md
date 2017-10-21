@@ -19,7 +19,7 @@ These are additions that I hope to implement assuming that I accomplish the main
 ## Timeline
 I am making a timeline for mini milestone deadlines which I hope that I will be successful in accomplishing.
 
- 1. October 21-23: Understand the Fabric application architecture, servelets better, and track goals for the rest of this timeline. 
+ 1. October 21-23: Better understand the Fabric application architecture, especially servelets in Fabric, and track goals for the rest of this timeline. 
  2. October 27-20: Have some skeleton application created.
  3. November 3-6: Implement some functionality.
  4. November 10-13:
