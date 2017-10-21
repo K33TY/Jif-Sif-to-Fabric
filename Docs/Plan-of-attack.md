@@ -10,7 +10,7 @@ These are the main goals that I hope to accomplish this semester:
   
 
 ## Secondary Goals
-These are additions that I hope to implement assuming that I accomplish the main functionality.
+If time permits, these are additional goals that I hope to accomplish:
 
   + Implement improvements to the calendar app's UI and usability.
   + Figure out how to automate the build process for this example.
