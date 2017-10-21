@@ -127,6 +127,8 @@ Unsure how data duplicates across multiple storage nodes, and if not, how would 
 **Missing Functionality**
 The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Will need to see if someone can locate preamble.js file for the SIF Calendar.
 
+Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. 
+
 -------------
 
 # List of TODOs
