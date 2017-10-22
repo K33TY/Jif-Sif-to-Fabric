@@ -127,7 +127,97 @@ Unsure how data duplicates across multiple storage nodes, and if not, how would 
 **Missing Functionality**
 The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Will need to see if someone can locate preamble.js file for the SIF Calendar.
 
-Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Get the preamble.js file loaded in Jetty or switch back to Tomcat if this doesn't work.
+Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Get the preamble.js file loaded in Jetty or switch back to Tomcat if this doesn't work. 
+
+I spent a few hours trying to get Jetty to recognize the preamble and then trying to get my mac to recognize the keypress events. To fix the problem with Jetty, I tried changing the path in the Servlet.java file to be within the webapp's directory. Then, after rebuilding sif, Jetty was loading the preamble. However, was having issues still with the keypress. I was not getting any output in the developer console for the code called from the body tag element:
+
+```html
+<body onkeypress="actionDown(event);" onkeyup="actionUp(event);" onload="initialize();">
+```
+
+So, I wrote a few test html files to see what was working or not, and realized that I was having issues with the above method. I instead decided to use javascript within the preamble instead:
+
+```html
+document.addEventListener("DOMContentLoaded", function(event) { 
+    document.addEventListener("keydown", actionDown, false);
+    document.addEventListener("keyup", actionUp, false);
+});
+```
+After this, I was able to see output in the console when I pressed keys, but I was not getting the expected behavior. I had a lot of trouble with the code that was supposed to register the alt key in combination with another key code. Without one or the other, and without the flag, the preamble was working (but extrememly annoying because now you couldn't type without the legend taking over.)
+
+The original function was as follows, but it was not working in any of my three browsers:
+```javascript
+// A = 97, B = 98, ..., H = 104, I = 105, J = 106, K = 107, L = 108, ..., O = 111, P = 112, Q = 113, R = 114, S = 115, ..., W = 119
+function actionDown(e) {
+    if(!e) e = window.event;
+    if(!flag && e.altKey) {
+        if(e.charCode == 113) { // Q: simple coloring
+            flag = true;
+            colorScheme = 113;
+        } else if (e.charCode == 119) { // W: HSV coloring
+            flag = true;
+            colorScheme = 119;
+        } else if (e.charCode == 105) { // I: Toggle between black background and white background
+            isBkBlack = !isBkBlack;
+        } else if (e.charCode == 111) { // O: Toggle between integrity and confidentiality
+            isInteg = !isInteg;
+        } else if (e.charCode == 114) { // R: Saturation based color
+            flag = true;
+            colorScheme = 114;
+        } else if(e.charCode == 108) { //  L: Display Legend
+            displayLegend();
+        }
+
+        if(flag) {
+            conf(getColorFunc());
+        }
+    } 
+}
+```
+
+This kind of got the colors to work:
+```javascript
+// A = 97, B = 98, ..., H = 104, I = 105, J = 106, K = 107, L = 108, ..., O = 111, P = 112, Q = 113, R = 114, S = 115, ..., W = 119
+function actionDown(e) {
+	if(!e) { e = window.event; }
+	
+	var key = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
+	console.log( "Code: " + e.code );
+	console.log( "KeyDown: " + key );
+	
+	if(!flag && e.altKey) {
+		console.log( "AltKey was true" );
+		
+		if (key == 81 || key == 113) { // Q: simple coloring
+			console.log( "Q key was pressed" );
+			flag = true;
+			colorScheme = 113;
+        } else if (key == 87 || key == 119) { // W: HSV coloring
+            console.log( "W key was pressed" );
+            flag = true;
+            colorScheme = 119;
+        } else if (key == 73 || key == 105) { // I: Toggle between black background and white background
+            console.log( "I key was pressed" );
+            isBkBlack = !isBkBlack;
+        } else if (key == 79 || key == 111) { // O: Toggle between integrity and confidentiality
+            console.log( "O key was pressed" );
+            isInteg = !isInteg;
+        } else if (key == 82 || key == 114) { // R: Saturation based color
+            console.log( "R key was pressed" );
+            flag = true;
+            colorScheme = 114;
+        } else if(key == 76 || key == 108) { //  L: Display Legend
+            console.log( "L key was pressed" );
+            displayLegend();
+        }
+		
+		if(flag) {
+			conf(getColorFunc());            
+		}
+	}
+	console.log("\n");
+}
+```
 
 -------------
 
