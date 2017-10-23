@@ -18,6 +18,8 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 21](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-21)
    * Trying to understand Fabric infrastructure.
    * Restore the missing color changing functionality in the SIF version so that I can at least see what it does.
+  * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
+   * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
  
 ## Jump to TODO List or Finished Task List.
 
@@ -220,6 +222,48 @@ function actionDown(e) {
 }
 ```
 
+## October 22
+**Started a base directory for my implementation for fabric repo, and trying to decide application architecture.**
+Because of the choice between datashipping and function shipping, it becomes important to decide how to cluster objects within this model, especially considering the fact that nodes will grab groups of related objects from storage nodes at once. Some ideas I had:
+
+**Objects**
+  + User 
+    * uid
+    * method to authenticate user
+    * a method to grab user's calendar data from persistent store
+    * array of events they own, and therefore can read and write 
+    * array of events they attend, and therefore can read
+    * array of events they can see as "busy"
+  + Event
+    * uid (owner of event)
+    * name (of event)
+    * start time
+    * end time
+    * note
+    * list of attendees
+    * list of viewers
+    * Q: *are creators of events allowed to transfer ownership of event?*
+  + Store
+    * hashmap of uid mapped to arrays of events they own
+    * hashmap of uid mapped to arrays of events they attend
+    * hashmap of uid mapped to arrays of events they may view
+This formatting should allow the storage node to retrieve entire calendar for a user once authenticated, when user adds event, let the method edit both cached copy in this session as well as doing remote call on the store, so that any effected user's arrays may also be updated.
+
+**Nodes**
+  + Persistent node must be the storage node, otherwise new calendar instantiated.
+  + Temporal nodes are the "session" worker nodes, and these get authenticated by logging into a user. Once this happens, grab all objects related to user from storage node to populate their calendar. 
+  + Q: *how will the new node know of the dns of the storage node, should make default for this instance?*
+  
+**Methods to consider**
+  + Think that it may be useful to let the atomic methods revolve around locking events and not the exterior objects holding them. 
+  
+**Possible extensions**
+  + Considering allowing there to be an acceptance/declination of event option and a way to leave an event? 
+  + Do we want events ordered by time, and also do we want an expanded view for days?
+
+**Things to figure out**
+  + How does the date utility work in this scenario?
+  
 -------------
 
 # List of TODOs
