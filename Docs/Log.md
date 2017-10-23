@@ -20,6 +20,8 @@ More was done prior to this date, but I have not recorded actions.
    * Restore the missing color changing functionality in the SIF version so that I can at least see what it does.
  * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
+ * [Oct 23](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23)
+   * Identify some other tasks that need to be done
  
 ## Jump to TODO List or Finished Task List.
 
@@ -264,6 +266,13 @@ This formatting should allow the storage node to retrieve entire calendar for a 
 **Things to figure out**
   + How does the date utility work in this scenario?
   
+## October 23
+**Identify some more necessary tasks that need to be done**
+[TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Identify methods in JIF/SIF and Fabric that the calendar calls. Create a list to see what crosses over.
+
+More questions to answer:
+  * Does Fabric have an HTML class?
+  
 -------------
 
 # List of TODOs
@@ -272,7 +281,8 @@ This formatting should allow the storage node to retrieve entire calendar for a 
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
   * Dig through Fabric source code to answer some questions that are confusing me
-
+  * Identify important methods that will need to be referenced from fabric util/lang/servlet
+  * Answer all the questions in october 22 and 23
   
 -------------
   
