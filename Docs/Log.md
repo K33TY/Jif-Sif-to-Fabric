@@ -43,6 +43,7 @@ I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/mas
 
 ## September 6-25
 **Fighting to get the environment set up.** 
+
 I had a lot of issues with installing Polyglot.
 
 Originally, my specifications were:
