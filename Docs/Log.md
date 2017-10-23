@@ -329,6 +329,7 @@ Because of the choice between datashipping and function shipping, it becomes imp
     * hashmap of uid mapped to arrays of events they own
     * hashmap of uid mapped to arrays of events they attend
     * hashmap of uid mapped to arrays of events they may view
+    
 This formatting should allow the storage node to retrieve entire calendar for a user once authenticated, when user adds event, let the method edit both cached copy in this session as well as doing remote call on the store, so that any effected user's arrays may also be updated.
 
 **Nodes**
