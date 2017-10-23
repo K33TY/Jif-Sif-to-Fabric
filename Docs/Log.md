@@ -5,7 +5,7 @@ More was done prior to this date, but I have not recorded actions.
 
  * Aug 22-Sep 6
    * Researching, reading about Fabric
- * [Sep 6-25](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#september-6-25)
+ * [Sep 6-24](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#september-6-24)
    * Fighting with setting up the environment on my Mac (or getting Ubuntu on Parallels to stop being so annoying)
    * Wasted some time trying to Dockerize the Polyglot-Jif-Sif-Fabric Stack
  * Sep 25
@@ -34,6 +34,7 @@ More was done prior to this date, but I have not recorded actions.
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
  * [Oct 23](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23)
    * Identify some other tasks that need to be done
+   * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash (should have saved the file instead of leaving it open in another workspace) after I upgraded to Sierra, which is part of why I started using Git instead.
  
 ## Jump to TODO List or Finished Task List.
 
@@ -41,7 +42,7 @@ I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/mas
  
 -------------
 
-## September 6-25
+## September 6-24
 **Fighting to get the environment set up.** 
 
 I had a lot of issues with installing Polyglot.
