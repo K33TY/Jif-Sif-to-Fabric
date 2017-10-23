@@ -244,7 +244,6 @@ Because of the choice between datashipping and function shipping, it becomes imp
     * note
     * list of attendees
     * list of viewers
-    * Q: *are creators of events allowed to transfer ownership of event?*
   + Store
     * hashmap of uid mapped to arrays of events they own
     * hashmap of uid mapped to arrays of events they attend
@@ -262,6 +261,7 @@ This formatting should allow the storage node to retrieve entire calendar for a 
 **Possible extensions**
   + Considering allowing there to be an acceptance/declination of event option and a way to leave an event? 
   + Do we want events ordered by time, and also do we want an expanded view for days?
+  + Allow creators of events to transfer ownership of event to others
 
 **Things to figure out**
   + How does the date utility work in this scenario?
