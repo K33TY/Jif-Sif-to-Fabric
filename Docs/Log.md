@@ -132,7 +132,7 @@ Unsure how data duplicates across multiple storage nodes, and if not, how would 
 **Missing Functionality**
 The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Will need to see if someone can locate preamble.js file for the SIF Calendar.
 
-Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Get the preamble.js file loaded in Jetty or switch back to Tomcat if this doesn't work. 
+Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Get the preamble.js file loaded in Jetty or switch back to Tomcat if this doesn't work. 
 
 I spent a few hours trying to get Jetty to recognize the preamble and then trying to get my mac to recognize the keypress events. To fix the problem with Jetty, I tried changing the path in the Servlet.java file to be within the webapp's directory. Then, after rebuilding sif, Jetty was loading the preamble. However, was having issues still with the keypress. I was not getting any output in the developer console for the code called from the body tag element:
 
@@ -292,3 +292,4 @@ More questions to answer:
   * Learn about servlets in Java
   * Learn about SIF's servlet
   * Locate SIF distribution preamble.js file.
+  * Get preamble.js to load in Jetty
