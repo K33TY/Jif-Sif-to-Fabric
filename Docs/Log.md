@@ -34,7 +34,7 @@ More was done prior to this date, but I have not recorded actions.
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
  * [Oct 23](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23)
    * Identify some other tasks that need to be done
-   * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash (should have saved the file instead of leaving it open in another workspace) after I upgraded to Sierra, which is part of why I started using Git instead.
+   * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash after I upgraded to Sierra (should have saved the file instead of leaving it open in another workspace), which is part of why I started using Git instead.
  
 ## Jump to TODO List or Finished Task List.
 
