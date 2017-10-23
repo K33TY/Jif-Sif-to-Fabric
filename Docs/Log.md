@@ -3,6 +3,16 @@ More was done prior to this date, but I have not recorded actions.
 
 ## Jump to a specific date
 
+ * Aug 22-Sep 6
+   * Researching, reading about Fabric
+ * [Sep 6-25](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#september-6-25)
+   * Fighting with setting up the environment on my Mac (or getting Ubuntu on Parallels to stop being so annoying)
+   * Wasted some time trying to Dockerize the Polyglot-Jif-Sif-Fabric Stack
+ * Sep 25
+   * Created git repository.
+   * Begin [documentation](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Polyglot-Jif-Fabric-Stack.md) regarding how to to install the stack needed for Fabric (Ant/Polyglot/Jif/Fabric), specifically because of issues on Mac OSX
+ * [Oct 2](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Sif-On-MacOSX.md)
+   * Documentation for SIF on a Mac
  * [Oct 9](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
    * Manage to get the Calendar app "sort of" working.
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
@@ -30,6 +40,58 @@ More was done prior to this date, but I have not recorded actions.
 I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) which I will add tasks that I need to remember to do later. Once I am done with any of these tasks, I will move it to the [Finished Task List](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks).
  
 -------------
+
+## September 6-25
+**Fighting to get the environment set up.** 
+I had a lot of issues with installing Polyglot.
+
+Originally, my specifications were:
+  + OSX 10.10.5
+  + Java JDK 8u111
+  
+I managed to get Ant installed quite easily, however I kept encountering issues with Polyglot:
+
+```
+Obit:polyglot Elizabeth$ jlc
+Exception in thread "main" java.lang.ExceptionInInitializerError
+Caused by: polyglot.util.InternalCompilerError: Java compiler not found.  Does java that runs Polyglot have javac along with it?
+	at polyglot.main.Main.javaCompiler(Main.java:85)
+	at polyglot.main.Main.<clinit>(Main.java:74)
+```
+
+However, the path seemed correct:
+
+```
+Obit:polyglot Elizabeth$ echo $JAVA_HOME
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
+```
+
+I double checked that the javac executable existed in this path by navigating through the directory structure. It did.
+
+After investigating Polyglot’s github repo, I found that Java is calling the getSystemJavaCompiler() method from ToolProvider.
+
+I decided to uninstall and reinstall my JRE and JDK (because they were not the same version), and updated both to the most recent release: 8u144.
+
+However, this was to no avail and I continued scouring Stackoverflow articles and forums for a solution, but nothing I tried seemed to fix this.
+
+I managed to get stack installed on Ubuntu, but I was extremely annoyed with this set up. There were issues with Ubuntu on Parallels randomly crashing and all the hotkeys from the MacOSX overriding the Linux hotkeys.
+
+Tried a lot of things trying to get the environment working on the Mac. Installing packages through Homebrew, uninstalling and reinstalling different versions of java JRE and JDK.
+
+I had verified with Yizhou that I have essentially set up Polyglot in the same way, except that I was using Java 8u111 and 8u144, and he has Java 8u101. I tried using that version, but it still had issues, so I decided to try an even older version of Java to see what would happen. I tried downgrading Java 1.7, but this broke Ant.
+
+**Looked at SIF Calendar**
+I downloaded SIF to take a look at the example implementation of the calendar. The structure of this code initially seemed familiar when I had only clicked the java file from the src-java directory. However, as I continued to drill down into other folders, I started to get progressively more confused. One majorly bewildering occurrence dealt with the “String jlc$ClassType$jif” and the peculiar hashes that seemed to follow. Luckily, I found an explanation in SIF: Enforcing Confidentiality and Integrity in Web Applications:
+
+> SIF is implemented in about 4040 non-comment, non-blank lines of Java code. An additional 960 lines of Jif code provide signatures for the Java classes that web applications interact with. Jif signatures provide security annotations for Java classes, and expose only a subset of the actual methods and fields to clients. SIF web applications are compiled against the Jif signatures, but linked at run time against the Java classes. Some Java Servlet framework functionality makes reasoning about information security infeasible. Using signatures and wrapper classes, SIF necessarily limits access to this functionality, but without preventing implementation of full-fledged web applications. 
+> 
+> (Chon, Vikram, and Meyers, 2)
+
+**Random notes**
+This
+Runtime labels vs. compile time labels. JIF doesn’t allow compile time labels.
+Computing labels is expensive because it deals with lattice joins and so forth.
+Issues with downgrading?
 
 ## October 9
 **Manage to get the Calendar app "sort of" working.** 
