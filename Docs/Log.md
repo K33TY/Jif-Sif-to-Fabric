@@ -18,7 +18,7 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 21](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-21)
    * Trying to understand Fabric infrastructure.
    * Restore the missing color changing functionality in the SIF version so that I can at least see what it does.
-  * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
+ * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
  
 ## Jump to TODO List or Finished Task List.
