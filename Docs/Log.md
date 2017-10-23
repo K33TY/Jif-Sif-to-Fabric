@@ -268,6 +268,7 @@ This formatting should allow the storage node to retrieve entire calendar for a 
   
 ## October 23
 **Identify some more necessary tasks that need to be done**
+
 [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Identify methods in JIF/SIF and Fabric that the calendar calls. Create a list to see what crosses over.
 
 More questions to answer:
