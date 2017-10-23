@@ -81,6 +81,15 @@ Tried a lot of things trying to get the environment working on the Mac. Installi
 
 I had verified with Yizhou that I have essentially set up Polyglot in the same way, except that I was using Java 8u111 and 8u144, and he has Java 8u101. I tried using that version, but it still had issues, so I decided to try an even older version of Java to see what would happen. I tried downgrading Java 1.7, but this broke Ant.
 
+This is the environment variables that I set on my Mac by editing ~/.bash_profile
+```
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_101)
+export ANT_HOME=/Users/Elizabeth/Desktop/MEng_Project/apache-ant-1.10.1
+export POLYGLOT=/Users/Elizabeth/Desktop/MEng_Project/polyglot
+export PATH="$PATH:${ANT_HOME}/bin:${POLYGLOT}/bin:${JAVA_HOME}/bin"
+export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/lib/java_cup.jar:${POLYGLOT}/lib/jflex.jar:${JAVA_HOME}
+```
+
 **Looked at SIF Calendar**
 I downloaded SIF to take a look at the example implementation of the calendar. The structure of this code initially seemed familiar when I had only clicked the java file from the src-java directory. However, as I continued to drill down into other folders, I started to get progressively more confused. One majorly bewildering occurrence dealt with the “String jlc$ClassType$jif” and the peculiar hashes that seemed to follow. Luckily, I found an explanation in SIF: Enforcing Confidentiality and Integrity in Web Applications:
 
@@ -90,8 +99,11 @@ I downloaded SIF to take a look at the example implementation of the calendar. T
 
 **Random notes**
 This
+
 Runtime labels vs. compile time labels. JIF doesn’t allow compile time labels.
+
 Computing labels is expensive because it deals with lattice joins and so forth.
+
 Issues with downgrading?
 
 ## October 9
