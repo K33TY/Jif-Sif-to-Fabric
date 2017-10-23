@@ -16,10 +16,11 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 9](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
    * Manage to get the Calendar app "sort of" working.
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
+   * Requested for meetLbl method in LabelUtil because could not find it in the source code.
    * Reformat significant portions of the code to make it more human readable.
  * [Oct 11](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
    * Began Git Log file.
-   * Recompile Jif with MeetLbl Method.
+   * Recompile Jif with meetLbl method.
    * Investigated capabilities of the Jif-Sif Calendar Application.
  * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
    * Reading about Java servelets since I have no prior experience with using them.
