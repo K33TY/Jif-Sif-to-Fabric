@@ -13,6 +13,7 @@ More was done prior to this date, but I have not recorded actions.
    * Investigated capabilities of the Jif-Sif Calendar Application.
  * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
    * Reading about Java servelets since I have no prior experience with using them.
+ * Oct 13-19 Other class projects and midterms week
  * [Oct 20](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-20)
    * Creating attack plan.
  * [Oct 21](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-21)
