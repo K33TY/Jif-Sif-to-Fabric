@@ -92,6 +92,7 @@ export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/li
 ```
 
 **Looked at SIF Calendar**
+
 I downloaded SIF to take a look at the example implementation of the calendar. The structure of this code initially seemed familiar when I had only clicked the java file from the src-java directory. However, as I continued to drill down into other folders, I started to get progressively more confused. One majorly bewildering occurrence dealt with the “String jlc$ClassType$jif” and the peculiar hashes that seemed to follow. Luckily, I found an explanation in SIF: Enforcing Confidentiality and Integrity in Web Applications:
 
 > SIF is implemented in about 4040 non-comment, non-blank lines of Java code. An additional 960 lines of Jif code provide signatures for the Java classes that web applications interact with. Jif signatures provide security annotations for Java classes, and expose only a subset of the actual methods and fields to clients. SIF web applications are compiled against the Jif signatures, but linked at run time against the Java classes. Some Java Servlet framework functionality makes reasoning about information security infeasible. Using signatures and wrapper classes, SIF necessarily limits access to this functionality, but without preventing implementation of full-fledged web applications. 
@@ -99,6 +100,7 @@ I downloaded SIF to take a look at the example implementation of the calendar. T
 > (Chon, Vikram, and Meyers, 2)
 
 **Random notes**
+
 This
 
 Runtime labels vs. compile time labels. JIF doesn’t allow compile time labels.
@@ -361,7 +363,7 @@ More questions to answer:
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
   * Dig through Fabric source code to answer some questions that are confusing me
   * Identify important methods that will need to be referenced from fabric util/lang/servlet
-  * Answer all the questions in october 22 and 23
+  * Answer all the questions in October 22 and 23
   
 -------------
   
