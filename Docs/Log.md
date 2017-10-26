@@ -37,6 +37,8 @@ More was done prior to this date, but I have not recorded actions.
    * Identify some other tasks that need to be done
    * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash after I upgraded to Sierra (should have saved the file instead of leaving it open in another workspace), which is part of why I started using Git instead.
    * Think about a lot of questions regarding Fabric, specifically relating to calendar
+ * [Oct 26](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-26)
+   * Trying every single Fabric example and looking at the type of files in each directory
  
 ## Jump to TODO List or Finished Task List.
 
@@ -364,7 +366,27 @@ More questions to answer:
 
 > I am imagining a session node starts when someone tries to access calendar. Then, logging in, if user does not exist yet, create an object for the user, allow password creation. If user exists already, authenticate user, and if authenticated, acquire user from storage node based on username. When user closes page or logs off, commit the user object to storage node. (But what happens if user has some transactions on other objects, namely other users calendars that they added to viewers or attendees, and it has not committed due to optimistic transaction possibly rolling back their operation?)
   
-  
+## October 26
+
+**Trying every single Fabric example and looking at the type of files in each directory.** Some have .fil, some .fab, and some both. Some implement SIF, while one is using JSP, while others rely solely on textbased output. Not all the examples have README files, and a few of the examples didn't seem to do anything. For example, I tried to run fabnfs, and didn't manage to see what it was supposed to do... The majority of the applications with README files were relatively simple to run. Simply compile the directory using ant and run the executables in the bin folder to start the nodes, initialize stores, and then run the application.
+
+**Skel README**
+```  
+This is a template for creating fabric examples. Many of our examples have
+multiple versions - maybe the example is modeled in java and then ported to
+fabil, or modeled in jif and ported to fabric, and this directory layout and
+build file are designed for this scenario.
+
+To create an example, copy this directory and perform the following steps:
+
+1. Write your source code in the appropriate src/ subdirectory
+2. Update the build file, replacing "skel" with the name of your example
+3. Create etc/keys/node and etc/config/node for any fabric nodes required to
+   run your example
+4. Create shell scripts in bin/ to run your example
+5. Replace this README with documentation for your example
+```
+
 -------------
 
 # List of TODOs
