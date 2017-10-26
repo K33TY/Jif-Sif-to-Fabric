@@ -387,6 +387,8 @@ To create an example, copy this directory and perform the following steps:
 5. Replace this README with documentation for your example
 ```
 
+I managed to confuse myself by reading about [JIF's interaction with Java](https://www.cs.cornell.edu/jif/doc/jif-3.3.0/misc.html#java), specifically because the examples that I was looking at did not seem like interfaces, but do not contain the method that I thought as per the manual that it should. Also, not sure I understood what I was reading regarding how the signatures are implemented. Will have to look at this again or clarify this later...
+
 -------------
 
 # List of TODOs
