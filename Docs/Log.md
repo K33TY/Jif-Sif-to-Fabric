@@ -33,9 +33,10 @@ More was done prior to this date, but I have not recorded actions.
    * Restore the missing color changing functionality in the SIF version so that I can at least see what it does.
  * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
- * [Oct 23](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23)
+ * [Oct 23-26](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23)
    * Identify some other tasks that need to be done
    * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash after I upgraded to Sierra (should have saved the file instead of leaving it open in another workspace), which is part of why I started using Git instead.
+   * Think about a lot of questions regarding Fabric, specifically relating to calendar
  
 ## Jump to TODO List or Finished Task List.
 
@@ -348,13 +349,18 @@ This formatting should allow the storage node to retrieve entire calendar for a 
 **Things to figure out**
   + How does the date utility work in this scenario?
   
-## October 23
+## October 23-26
 **Identify some more necessary tasks that need to be done**
 
 [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Identify methods in JIF/SIF and Fabric that the calendar calls. Create a list to see what crosses over.
 
 More questions to answer:
   * Does Fabric have an HTML class?
+  * Should the calendar implement a dissemination layer? If so, how to do this. Otherwise, is it sufficient for demo to ignore this since there is no wire for worker to traverse within...
+  * Are storage nodes only persistent during their lifespan? What happens if I stop running the program, or shut down the node? How to deal with availability of information if storage node fails? Does this mean that on a true implementation that there should be multiple storage nodes at different servers? How extensive should this example be?
+
+> I am imagining a session node starts when someone tries to access calendar. Then, logging in, if user does not exist yet, create an object for the user, allow password creation. If user exists already, authenticate user, and if authenticated, acquire user from storage node based on username. When user closes page or logs off, commit the user object to storage node. (But what happens if user has some transactions on other objects, namely other users calendars that they added to viewers or attendees, and it has not committed due to optimistic transaction possibly rolling back their operation?)
+  
   
 -------------
 
