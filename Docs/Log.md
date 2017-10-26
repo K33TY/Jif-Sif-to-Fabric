@@ -369,7 +369,9 @@ More questions to answer:
   
 ## October 26
 
-**Trying every single Fabric example and looking at the type of files in each directory.** (I had previously only ran the SIF examples thinking that they were directly related to the calendar.) Some examples have .fil, some .fab, and some both. Some implement SIF, while one is using JSP, while others rely solely on textbased output. Not all the examples have README files, and a few of the examples didn't seem to do anything. For example, I tried to run fabnfs, and didn't manage to see what it was supposed to do... The majority of the applications with README files were relatively simple to run. Simply compile the directory using ant and run the executables in the bin folder to start the nodes, initialize stores, and then run the application. I noticed that while compiling with ant, almost all the were complaining that I should recompile with -Xlint:unchecked for details of input files using unchecked or unsafe operations.
+**Trying every single Fabric example and looking at the type of files in each directory.**
+
+(I had previously only ran the SIF examples thinking that they were directly related to the calendar.) Some examples have .fil, some .fab, and some both. Some implement SIF, while one is using JSP, while others rely solely on textbased output. Not all the examples have README files, and a few of the examples didn't seem to do anything. For example, I tried to run fabnfs, and didn't manage to see what it was supposed to do... The majority of the applications with README files were relatively simple to run. Simply compile the directory using ant and run the executables in the bin folder to start the nodes, initialize stores, and then run the application. I noticed that while compiling with ant, almost all the were complaining that I should recompile with -Xlint:unchecked for details of input files using unchecked or unsafe operations.
 
 **Skel README**
 ```  
@@ -389,6 +391,7 @@ To create an example, copy this directory and perform the following steps:
 ```
 
 **Trying to understand how signatures work**
+
 I managed to confuse myself by reading about [JIF's interaction with Java](https://www.cs.cornell.edu/jif/doc/jif-3.3.0/misc.html#java), specifically because the examples that I was looking at did not seem like interfaces, but do not contain the method that I thought as per the manual that it should. Also, not sure I understood what I was reading regarding how the signatures are implemented. Will have to look at this again or clarify this later...
 
 -------------
