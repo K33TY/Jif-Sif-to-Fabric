@@ -34,11 +34,12 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
    * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
  * [Oct 23-25](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23-25)
-   * Identify some other tasks that need to be done
+   * Identify some other tasks that need to be done.
    * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash after I upgraded to Sierra (should have saved the file instead of leaving it open in another workspace), which is part of why I started using Git instead.
-   * Think about a lot of questions regarding Fabric, specifically relating to calendar
+   * Think about a lot of questions regarding Fabric, specifically relating to calendar.
  * [Oct 26](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-26)
-   * Trying every single Fabric example and looking at the type of files in each directory
+   * Trying every single Fabric example and looking at the type of files in each directory.
+   * Trying to better understand how the signatures in the java classes work.
  
 ## Jump to TODO List or Finished Task List.
 
@@ -387,6 +388,7 @@ To create an example, copy this directory and perform the following steps:
 5. Replace this README with documentation for your example
 ```
 
+**Trying to understand how signatures work**
 I managed to confuse myself by reading about [JIF's interaction with Java](https://www.cs.cornell.edu/jif/doc/jif-3.3.0/misc.html#java), specifically because the examples that I was looking at did not seem like interfaces, but do not contain the method that I thought as per the manual that it should. Also, not sure I understood what I was reading regarding how the signatures are implemented. Will have to look at this again or clarify this later...
 
 -------------
