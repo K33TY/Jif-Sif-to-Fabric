@@ -350,9 +350,10 @@ This formatting should allow the storage node to retrieve entire calendar for a 
   + How does the date utility work in this scenario?
   
 ## October 23-25
-**Identify some more necessary tasks that need to be done**
 
 > I finished reading [Fabric: A Platform for Secure Distributed Computation and Storage](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf), and found that this article was a comprehensive overview of Fabric that was both dense but also extremely intriguing. It renewed my excitement about the language when I realized the capabilities of the language and all the considerations that were put into its design. I think a that portions of this paper would be useful to add to the current documentation for Fabric as it greatly aided in my overall understanding of how Fabric works and what function it serves. I thought I had read this paper previously, but I am certain at this point that I hadn't read it and confused it with the longer paper that I had attempted to read earlier in the semester. I definitely recommend this one.
+
+**Identify some more necessary tasks that need to be done**
 
 [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Identify methods in JIF/SIF and Fabric that the calendar calls. Create a list to see what crosses over.
 
