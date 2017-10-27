@@ -3,24 +3,122 @@ More was done prior to this date, but I have not recorded actions.
 
 ## Jump to a specific date
 
+ * Aug 22-Sep 6
+   * Researching, reading about Fabric
+ * [Sep 6-24](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#september-6-24)
+   * Fighting with setting up the environment on my Mac (or getting Ubuntu on Parallels to stop being so annoying)
+   * Wasted some time trying to Dockerize the Polyglot-Jif-Sif-Fabric Stack
+ * Sep 25
+   * Created git repository.
+   * Begin [documentation](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Polyglot-Jif-Fabric-Stack.md) regarding how to to install the stack needed for Fabric (Ant/Polyglot/Jif/Fabric), specifically because of issues on Mac OSX
+ * [Oct 2](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Sif-On-MacOSX.md)
+   * Documentation for SIF on a Mac
  * [Oct 9](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-9)
    * Manage to get the Calendar app "sort of" working.
  * [Oct 10](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-10)
+   * Requested for meetLbl method in LabelUtil because could not find it in the source code.
    * Reformat significant portions of the code to make it more human readable.
  * [Oct 11](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-11)
    * Began Git Log file.
-   * Recompile Jif with MeetLbl Method.
+   * Recompile Jif with meetLbl method.
    * Investigated capabilities of the Jif-Sif Calendar Application.
  * [Oct 12](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-12)
    * Reading about Java servelets since I have no prior experience with using them.
+ * Oct 13-19 
+   * Other class projects and midterms week
  * [Oct 20](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-20)
    * Creating attack plan.
+ * [Oct 21](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-21)
+   * Trying to understand Fabric infrastructure.
+   * Restore the missing color changing functionality in the SIF version so that I can at least see what it does.
+ * [Oct 22](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-22)
+   * Started a base directory for my implementation for fabric repo, and trying to decide application architecture.
+ * [Oct 23-25](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-23-25)
+   * Identify some other tasks that need to be done.
+   * Updated documentation to include stuff I found documented in a Word file, but it was missing a few days because of a weird crash after I upgraded to Sierra (should have saved the file instead of leaving it open in another workspace), which is part of why I started using Git instead.
+   * Think about a lot of questions regarding Fabric, specifically relating to calendar.
+ * [Oct 26](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-26)
+   * Trying every single Fabric example and looking at the type of files in each directory.
+   * Trying to better understand how the signatures in the java classes work.
+   * Adding to other repo holding [calendar codebase](https://github.com/K33TY/Fabric-Calendar)
+ * [Oct 27]()
+   * Discover Doxygen, using it to sift through Fabric codebase
  
 ## Jump to TODO List or Finished Task List.
 
-I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) which I will add tasks that I need to remember to do later. Once I am done with any of these tasks, I will move it to the [Finished Task List](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks).
+I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) which I will add tasks that I need to remember to do later. Once I am done with any of these tasks (or decide that it is not something I should focus on anymore), I will move it to the [Finished Task List](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks).
+
+## Adding to Calendar Codebase Repo ##
+[Calendar](https://github.com/K33TY/Fabric-Calendar)
  
 -------------
+
+## September 6-24
+**Fighting to get the environment set up.** 
+
+I had a lot of issues with installing Polyglot.
+
+Originally, my specifications were:
+  + OSX 10.10.5
+  + Java JDK 8u111
+  
+I managed to get Ant installed quite easily, however I kept encountering issues with Polyglot:
+
+```
+Obit:polyglot Elizabeth$ jlc
+Exception in thread "main" java.lang.ExceptionInInitializerError
+Caused by: polyglot.util.InternalCompilerError: Java compiler not found.  Does java that runs Polyglot have javac along with it?
+	at polyglot.main.Main.javaCompiler(Main.java:85)
+	at polyglot.main.Main.<clinit>(Main.java:74)
+```
+
+However, the path seemed correct:
+
+```
+Obit:polyglot Elizabeth$ echo $JAVA_HOME
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
+```
+
+I double checked that the javac executable existed in this path by navigating through the directory structure. It did.
+
+After investigating Polyglot’s github repo, I found that Java is calling the getSystemJavaCompiler() method from ToolProvider.
+
+I decided to uninstall and reinstall my JRE and JDK (because they were not the same version), and updated both to the most recent release: 8u144.
+
+However, this was to no avail and I continued scouring Stackoverflow articles and forums for a solution, but nothing I tried seemed to fix this.
+
+I managed to get stack installed on Ubuntu, but I was extremely annoyed with this set up. There were issues with Ubuntu on Parallels randomly crashing and all the hotkeys from the MacOSX overriding the Linux hotkeys.
+
+Tried a lot of things trying to get the environment working on the Mac. Installing packages through Homebrew, uninstalling and reinstalling different versions of java JRE and JDK.
+
+I had verified with Yizhou that I have essentially set up Polyglot in the same way, except that I was using Java 8u111 and 8u144, and he has Java 8u101. I tried using that version, but it still had issues, so I decided to try an even older version of Java to see what would happen. I tried downgrading Java 1.7, but this broke Ant.
+
+This is the environment variables that I set on my Mac by editing ~/.bash_profile
+```
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_101)
+export ANT_HOME=/Users/Elizabeth/Desktop/MEng_Project/apache-ant-1.10.1
+export POLYGLOT=/Users/Elizabeth/Desktop/MEng_Project/polyglot
+export PATH="$PATH:${ANT_HOME}/bin:${POLYGLOT}/bin:${JAVA_HOME}/bin"
+export CLASSPATH=${CLASSPATH}:${POLYGLOT}/classes:${POLYGLOT}/bin:${POLYGLOT}/lib/java_cup.jar:${POLYGLOT}/lib/jflex.jar:${JAVA_HOME}
+```
+
+**Looked at SIF Calendar**
+
+I downloaded SIF to take a look at the example implementation of the calendar. The structure of this code initially seemed familiar when I had only clicked the java file from the src-java directory. However, as I continued to drill down into other folders, I started to get progressively more confused. One majorly bewildering occurrence dealt with the “String jlc$ClassType$jif” and the peculiar hashes that seemed to follow. Luckily, I found an explanation in SIF: Enforcing Confidentiality and Integrity in Web Applications:
+
+> SIF is implemented in about 4040 non-comment, non-blank lines of Java code. An additional 960 lines of Jif code provide signatures for the Java classes that web applications interact with. Jif signatures provide security annotations for Java classes, and expose only a subset of the actual methods and fields to clients. SIF web applications are compiled against the Jif signatures, but linked at run time against the Java classes. Some Java Servlet framework functionality makes reasoning about information security infeasible. Using signatures and wrapper classes, SIF necessarily limits access to this functionality, but without preventing implementation of full-fledged web applications. 
+> 
+> (Chon, Vikram, and Meyers, 2)
+
+**Random notes**
+
+This
+
+Runtime labels vs. compile time labels. JIF doesn’t allow compile time labels.
+
+Computing labels is expensive because it deals with lattice joins and so forth.
+
+Issues with downgrading?
 
 ## October 9
 **Manage to get the Calendar app "sort of" working.** 
@@ -75,7 +173,7 @@ Java Server Page - webpages embedded with Java code requiring a JSP engine such 
 Servlets - unlike JSP are pure Java classes that require that it's classes are within the classpath, and the location depends on the servlet engine.
 
 *The `Servlet` interface* 
-> Note that this is different from SIF's servlet. [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Investigate and understand SIF's servelet.
+> Note that this is different from SIF's servlet. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Investigate and understand SIF's servelet.
 
 ```java
 package javax.servlet;
@@ -110,17 +208,230 @@ public interface Servlet
 
 [Link](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Plan-of-attack.md): This also contains a timeline for what I am hoping to get done when.
 
+## October 21
+**Trying to understand infrastructure.**
+
+Want to make some diagrams for Calendar application so that I have a clear picture of what needs to be programmed. Wonder if this is how remote Fabric method calls work, the syntax for labelling and annotation is not there):
+![Remote Fabric Call](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/FabricRemoteCall.png "remote fabric call")
+
+I'm also trying to understand how Fabric's implementation of the SIF servlet works. Searching for information about the SIF servlet lead me to an [article](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf) that I skimmed through, but it looks like invaluable information and so I am going to print it out and read it more carefully today.
+
+I understand that I can start multiple nodes on my machine, and use the provided CA (which is insecure but probably sufficient for testing), but I'm not sure if this will be sufficient for testing my application. 
+
+Unsure how data duplicates across multiple storage nodes, and if not, how would a worker node know where to access the object? [TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) May need to dig through Fabric source code, because I am confused how it works...
+
+**Missing Functionality**
+The calendar app in the version of sif that I downloaded is missing it's preamble.js file, and therefore cannot access the onkeypress events that alledgedly change the color. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Will need to see if someone can locate preamble.js file for the SIF Calendar.
+
+Found that preamble.js is in the src folder in sif and not in the example folders. Tried several ways of trying to get it to load in Jetty, but so far it's not working. [DONE:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks) Get the preamble.js file loaded in Jetty or switch back to Tomcat if this doesn't work. 
+
+I spent a few hours trying to get Jetty to recognize the preamble and then trying to get my mac to recognize the keypress events. To fix the problem with Jetty, I tried changing the path in the Servlet.java file to be within the webapp's directory. Then, after rebuilding sif, Jetty was loading the preamble. However, was having issues still with the keypress. I was not getting any output in the developer console for the code called from the body tag element:
+
+```html
+<body onkeypress="actionDown(event);" onkeyup="actionUp(event);" onload="initialize();">
+```
+
+So, I wrote a few test html files to see what was working or not, and realized that I was having issues with the above method. I instead decided to use javascript within the preamble instead:
+
+```html
+document.addEventListener("DOMContentLoaded", function(event) { 
+    document.addEventListener("keydown", actionDown, false);
+    document.addEventListener("keyup", actionUp, false);
+});
+```
+After this, I was able to see output in the console when I pressed keys, but I was not getting the expected behavior. I had a lot of trouble with the code that was supposed to register the alt key in combination with another key code. Without one or the other, and without the flag, the preamble was working (but extrememly annoying because now you couldn't type without the legend taking over.)
+
+The original function was as follows, but it was not working in any of my three browsers:
+```javascript
+// A = 97, B = 98, ..., H = 104, I = 105, J = 106, K = 107, L = 108, ..., O = 111, P = 112, Q = 113, R = 114, S = 115, ..., W = 119
+function actionDown(e) {
+    if(!e) e = window.event;
+    if(!flag && e.altKey) {
+        if(e.charCode == 113) { // Q: simple coloring
+            flag = true;
+            colorScheme = 113;
+        } else if (e.charCode == 119) { // W: HSV coloring
+            flag = true;
+            colorScheme = 119;
+        } else if (e.charCode == 105) { // I: Toggle between black background and white background
+            isBkBlack = !isBkBlack;
+        } else if (e.charCode == 111) { // O: Toggle between integrity and confidentiality
+            isInteg = !isInteg;
+        } else if (e.charCode == 114) { // R: Saturation based color
+            flag = true;
+            colorScheme = 114;
+        } else if(e.charCode == 108) { //  L: Display Legend
+            displayLegend();
+        }
+
+        if(flag) {
+            conf(getColorFunc());
+        }
+    } 
+}
+```
+
+This kind of got the colors to work:
+```javascript
+// A = 97, B = 98, ..., H = 104, I = 105, J = 106, K = 107, L = 108, ..., O = 111, P = 112, Q = 113, R = 114, S = 115, ..., W = 119
+function actionDown(e) {
+	if(!e) { e = window.event; }
+	
+	var key = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
+	console.log( "Code: " + e.code );
+	console.log( "KeyDown: " + key );
+	
+	if(!flag && e.altKey) {
+		console.log( "AltKey was true" );
+		
+		if (key == 81 || key == 113) { // Q: simple coloring
+			console.log( "Q key was pressed" );
+			flag = true;
+			colorScheme = 113;
+        } else if (key == 87 || key == 119) { // W: HSV coloring
+            console.log( "W key was pressed" );
+            flag = true;
+            colorScheme = 119;
+        } else if (key == 73 || key == 105) { // I: Toggle between black background and white background
+            console.log( "I key was pressed" );
+            isBkBlack = !isBkBlack;
+        } else if (key == 79 || key == 111) { // O: Toggle between integrity and confidentiality
+            console.log( "O key was pressed" );
+            isInteg = !isInteg;
+        } else if (key == 82 || key == 114) { // R: Saturation based color
+            console.log( "R key was pressed" );
+            flag = true;
+            colorScheme = 114;
+        } else if(key == 76 || key == 108) { //  L: Display Legend
+            console.log( "L key was pressed" );
+            displayLegend();
+        }
+		
+		if(flag) {
+			conf(getColorFunc());            
+		}
+	}
+	console.log("\n");
+}
+```
+
+## October 22
+**Started a base directory for my implementation for fabric repo, and trying to decide application architecture.**
+Because of the choice between datashipping and function shipping, it becomes important to decide how to cluster objects within this model, especially considering the fact that nodes will grab groups of related objects from storage nodes at once. Some ideas I had:
+
+**Objects**
+  + User 
+    * uid
+    * method to authenticate user
+    * a method to grab user's calendar data from persistent store
+    * array of events they own, and therefore can read and write 
+    * array of events they attend, and therefore can read
+    * array of events they can see as "busy"
+  + Event
+    * uid (owner of event)
+    * name (of event)
+    * start time
+    * end time
+    * note
+    * list of attendees
+    * list of viewers
+  + Store
+    * hashmap of uid mapped to arrays of events they own
+    * hashmap of uid mapped to arrays of events they attend
+    * hashmap of uid mapped to arrays of events they may view
+    
+This formatting should allow the storage node to retrieve entire calendar for a user once authenticated, when user adds event, let the method edit both cached copy in this session as well as doing remote call on the store, so that any effected user's arrays may also be updated.
+
+**Nodes**
+  + Persistent node must be the storage node, otherwise new calendar instantiated.
+  + Temporal nodes are the "session" worker nodes, and these get authenticated by logging into a user. Once this happens, grab all objects related to user from storage node to populate their calendar. 
+  + Q: *how will the new node know of the dns of the storage node, should make default for this instance?*
+  
+**Methods to consider**
+  + Think that it may be useful to let the atomic methods revolve around locking events and not the exterior objects holding them. 
+  
+**Possible extensions**
+  + Considering allowing there to be an acceptance/declination of event option and a way to leave an event? 
+  + Do we want events ordered by time, and also do we want an expanded view for days?
+  + Allow creators of events to transfer ownership of event to others
+
+**Things to figure out**
+  + How does the date utility work in this scenario?
+  
+## October 23-25
+
+> I finished reading [Fabric: A Platform for Secure Distributed Computation and Storage](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf), and found that this article was a comprehensive overview of Fabric that was both dense but also extremely intriguing. It renewed my excitement about the language when I realized the capabilities of the language and all the considerations that were put into its design. I think a that portions of this paper would be useful to add to the current documentation for Fabric as it greatly aided in my overall understanding of how Fabric works and what function it serves. I thought I had read this paper previously, but I am certain at this point that I hadn't read it and confused it with the longer paper that I had attempted to read earlier in the semester. I definitely recommend this one.
+
+**Identify some more necessary tasks that need to be done**
+
+[TODO:](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) Identify methods in JIF/SIF and Fabric that the calendar calls. Create a list to see what crosses over.
+
+More questions to answer:
+  * Does Fabric have an HTML class?
+  * Should the calendar implement a dissemination layer? If so, how to do this. Otherwise, is it sufficient for demo to ignore this since there is no wire for worker to traverse within...
+  * Are storage nodes only persistent during their lifespan? What happens if I stop running the program, or shut down the node? How to deal with availability of information if storage node fails? Does this mean that on a true implementation that there should be multiple storage nodes at different servers? How extensive should this example be?
+
+> I am imagining a session node starts when someone tries to access calendar. Then, logging in, if user does not exist yet, create an object for the user, allow password creation. If user exists already, authenticate user, and if authenticated, acquire user from storage node based on username. When user closes page or logs off, commit the user object to storage node. (But what happens if user has some transactions on other objects, namely other users calendars that they added to viewers or attendees, and it has not committed due to optimistic transaction possibly rolling back their operation?)
+  
+## October 26
+
+**Trying every single Fabric example and looking at the type of files in each directory.**
+
+(I had previously only ran the SIF examples thinking that they were directly related to the calendar.) Some examples have .fil, some .fab, and some both. Some implement SIF, while one is using JSP, while others rely solely on textbased output. Not all the examples have README files, and a few of the examples didn't seem to do anything. For example, I tried to run fabnfs, and didn't manage to see what it was supposed to do... The majority of the applications with README files were relatively simple to run. Simply compile the directory using ant and run the executables in the bin folder to start the nodes, initialize stores, and then run the application. I noticed that while compiling with ant, almost all the were complaining that I should recompile with -Xlint:unchecked for details of input files using unchecked or unsafe operations.
+
+**Skel README**
+```  
+This is a template for creating fabric examples. Many of our examples have
+multiple versions - maybe the example is modeled in java and then ported to
+fabil, or modeled in jif and ported to fabric, and this directory layout and
+build file are designed for this scenario.
+
+To create an example, copy this directory and perform the following steps:
+
+1. Write your source code in the appropriate src/ subdirectory
+2. Update the build file, replacing "skel" with the name of your example
+3. Create etc/keys/node and etc/config/node for any fabric nodes required to
+   run your example
+4. Create shell scripts in bin/ to run your example
+5. Replace this README with documentation for your example
+```
+
+**Trying to understand how signatures work**
+
+I managed to confuse myself by reading about [JIF's interaction with Java](https://www.cs.cornell.edu/jif/doc/jif-3.3.0/misc.html#java), specifically because the examples that I was looking at did not seem like interfaces, but do not contain the method that I thought as per the manual that it should. Also, not sure I understood what I was reading regarding how the signatures are implemented. Will have to look at this again or clarify this later...
+
+## October 27
+
+**Discover Doxygen**
+This is making it a lot easier to sift through the fabric language codebase, however some of the classes are not fully self-documenting as large amounts of methods are overlooked (or do not have document comments), and some of the classes are not receiving any love from Doxygen at all.
+
+Currently, I am assuming that the fabric code that is implemented is from the system directory, but if so, what are the other directories? I could be entirely wrong in this assumption.
+
+It is interesting that even ```<br>``` is implementing security labels. I'm guess that it's a covert channel because an adversary could assume that there are some content between some breaks?
+
+I had been wondering what pastry was, and am now assuming that it is related to this:
+ + [Free Pastry README](https://www.freepastry.org/FreePastry/README-1.3.html)
+ + [Cornell paper about pastry](https://www.cs.cornell.edu/people/egs/615/pastry.pdf)
+ 
+ 
+
+
 -------------
 
 # List of TODOs
 
-  * Learn about SIF's servlet
   * Research how to create Jetty webapp that does not need dependencies directly put into application folder and can be put in a shared location
   * Automated build for calendar (build.xml / properties.in) incorporating Jetty
   * Fix calendar usability issues: fields empty themselves when trying to change other parameters
+  * Dig through Fabric source code to answer some questions that are confusing me
+  * Identify important methods that will need to be referenced from fabric util/lang/servlet
+  * Answer all the questions in October 22 and 23
   
 -------------
   
 # Finished Tasks
 
   * Learn about servlets in Java
+  * Learn about SIF's servlet
+  * Locate SIF distribution preamble.js file.
+  * Get preamble.js to load in Jetty
