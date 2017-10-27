@@ -405,9 +405,15 @@ I managed to confuse myself by reading about [JIF's interaction with Java](https
 **Discover Doxygen**
 This is making it a lot easier to sift through the fabric language codebase, however some of the classes are not fully self-documenting as large amounts of methods are overlooked (or do not have document comments), and some of the classes are not receiving any love from Doxygen at all.
 
+Currently, I am assuming that the fabric code that is implemented is from the system directory, but if so, what are the other directories? I could be entirely wrong in this assumption.
+
+It is interesting that even ```<br>``` is implementing security labels. I'm guess that it's a covert channel because an adversary could assume that there are some content between some breaks?
+
 I had been wondering what pastry was, and am now assuming that it is related to this:
  + [Free Pastry README](https://www.freepastry.org/FreePastry/README-1.3.html)
  + [Cornell paper about pastry](https://www.cs.cornell.edu/people/egs/615/pastry.pdf)
+ 
+ 
 
 
 -------------
