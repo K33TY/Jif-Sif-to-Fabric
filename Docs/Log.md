@@ -41,7 +41,7 @@ More was done prior to this date, but I have not recorded actions.
    * Trying every single Fabric example and looking at the type of files in each directory.
    * Trying to better understand how the signatures in the java classes work.
    * Adding to other repo holding [calendar codebase](https://github.com/K33TY/Fabric-Calendar)
- * [Oct 27]()
+ * [Oct 27](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-27)
    * Discover Doxygen, using it to sift through Fabric codebase
  
 ## Jump to TODO List or Finished Task List.
@@ -414,8 +414,7 @@ I had been wondering what pastry was, and am now assuming that it is related to 
  + [Cornell paper about pastry](https://www.cs.cornell.edu/people/egs/615/pastry.pdf)
  
  **Investigating Fabric's implementation of SIF, and trying to understand all the parameters**
- > + The label L is an upper bound on the information contained in the node. 
- + The label E is an upper bound on the information gained by knowing that this node is present in the HTML sent to the client.
+ > + The label L is an upper bound on the information contained in the node. + The label E is an upper bound on the information gained by knowing that this node is present in the HTML sent to the client.
  
  
 
