@@ -41,6 +41,8 @@ More was done prior to this date, but I have not recorded actions.
    * Trying every single Fabric example and looking at the type of files in each directory.
    * Trying to better understand how the signatures in the java classes work.
    * Adding to other repo holding [calendar codebase](https://github.com/K33TY/Fabric-Calendar)
+ * [Oct 27]()
+   * Discover Doxygen, using it to sift through Fabric codebase
  
 ## Jump to TODO List or Finished Task List.
 
@@ -397,6 +399,16 @@ To create an example, copy this directory and perform the following steps:
 **Trying to understand how signatures work**
 
 I managed to confuse myself by reading about [JIF's interaction with Java](https://www.cs.cornell.edu/jif/doc/jif-3.3.0/misc.html#java), specifically because the examples that I was looking at did not seem like interfaces, but do not contain the method that I thought as per the manual that it should. Also, not sure I understood what I was reading regarding how the signatures are implemented. Will have to look at this again or clarify this later...
+
+## October 27
+
+**Discover Doxygen**
+This is making it a lot easier to sift through the fabric language codebase, however some of the classes are not fully self-documenting as large amounts of methods are overlooked (or do not have document comments), and some of the classes are not receiving any love from Doxygen at all.
+
+I had been wondering what pastry was, and am now assuming that it is related to this:
+ + [Free Pastry README](https://www.freepastry.org/FreePastry/README-1.3.html)
+ + [Cornell paper about pastry](https://www.cs.cornell.edu/people/egs/615/pastry.pdf)
+
 
 -------------
 
