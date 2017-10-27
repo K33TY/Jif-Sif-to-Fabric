@@ -414,7 +414,8 @@ I had been wondering what pastry was, and am now assuming that it is related to 
  + [Cornell paper about pastry](https://www.cs.cornell.edu/people/egs/615/pastry.pdf)
  
  **Investigating Fabric's implementation of SIF, and trying to understand all the parameters**
- > The label L is an upper bound on the information contained in the node. The label E is an upper bound on the information gained by knowing that this node is present in the HTML sent to the client.
+ > + The label L is an upper bound on the information contained in the node. 
+ + The label E is an upper bound on the information gained by knowing that this node is present in the HTML sent to the client.
  
  
 
