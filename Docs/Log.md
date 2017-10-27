@@ -40,10 +40,14 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 26](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-26)
    * Trying every single Fabric example and looking at the type of files in each directory.
    * Trying to better understand how the signatures in the java classes work.
+   * Adding to other repo holding [calendar codebase](https://github.com/K33TY/Fabric-Calendar)
  
 ## Jump to TODO List or Finished Task List.
 
 I have created a [TODO list](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#list-of-todos) which I will add tasks that I need to remember to do later. Once I am done with any of these tasks (or decide that it is not something I should focus on anymore), I will move it to the [Finished Task List](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#finished-tasks).
+
+## Adding to Calendar Codebase Repo ##
+[Calendar](https://github.com/K33TY/Fabric-Calendar)
  
 -------------
 
