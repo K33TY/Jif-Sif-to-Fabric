@@ -13,6 +13,7 @@ These are the main goals that I hope to accomplish this semester:
 If time permits, these are additional goals that I hope to accomplish:
 
   + Implement improvements to the calendar app's UI and usability.
+  + Extend from current hardcoding of users to perhaps allow adding users
   + Figure out how to automate the build process for this example.
   + Figure out how use shared .jar libraries in Jetty.
 
