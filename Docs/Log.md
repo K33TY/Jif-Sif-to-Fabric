@@ -43,6 +43,8 @@ More was done prior to this date, but I have not recorded actions.
    * Adding to other repo holding [calendar codebase](https://github.com/K33TY/Fabric-Calendar)
  * [Oct 27](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-27)
    * Discover Doxygen, using it to sift through Fabric codebase
+ * [Oct 28-31](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-28-31)
+   * Restructure architecture of calendar application
  
 ## Jump to TODO List or Finished Task List.
 
@@ -417,7 +419,9 @@ I had been wondering what pastry was, and am now assuming that it is related to 
  > + The label L is an upper bound on the information contained in the node. 
  > + The label E is an upper bound on the information gained by knowing that this node is present in the HTML sent to the client.
  
- 
+## October 28-31
+Restructuring code to have the Fabric language be more of a consideration in the design of the architecture.
+Have questions regarding the store that I've been trying to go through Fabric source code to figure out. 
 
 
 -------------
