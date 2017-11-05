@@ -45,6 +45,12 @@ More was done prior to this date, but I have not recorded actions.
    * Discover Doxygen, using it to sift through Fabric codebase
  * [Oct 28-31](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-28-31)
    * Restructure architecture of calendar application
+   * Discover about Pastry for dissemination
+   * Investigate how persistence works (using Berkeley DB)
+ * Nov 1-3 
+   * Reading through more of the Java implementation of the Fabric Language
+ * [Nov 4-5](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#november-4-5)
+   * Discover important directories in the Fabric Language which will be useful for using the language
  
 ## Jump to TODO List or Finished Task List.
 
@@ -423,6 +429,8 @@ I had been wondering what pastry was, and am now assuming that it is related to 
 Restructuring code to have the Fabric language be more of a consideration in the design of the architecture.
 Have questions regarding the store that I've been trying to go through Fabric source code to figure out. 
 
+## November 4-5
+Within the directories: `signatures/fabric/*` there are several useful directories from which objects must inherit in the Calendar implementation. Knowing this helps make the demo code a lot more understandable. Begin going through this code and some of the demos again.
 
 -------------
 
