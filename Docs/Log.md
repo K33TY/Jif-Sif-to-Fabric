@@ -441,13 +441,13 @@ Within the directories: `signatures/fabric/*` there are several useful directori
 I had no idea that Java could implement an interface with an inner class, and I'm not sure what doing this causes... (Looking at example code from Fabric examples)
 
 Trying to figure out what the hardcoded variables might be in the Fabric java classes in the examples, (the ones with numbers on the end seem to have some arbitrary number, and not sure what these numbers mean):
-$commit323
-$label30
-$tm235
-$e234
-$currentTid34
-$backOff30
-$classHash
+  * $commit323
+  * $label30
+  * $tm235
+  * $e234
+  * $currentTid34
+  * $backOff30
+  * $classHash
 
 -------------
 
