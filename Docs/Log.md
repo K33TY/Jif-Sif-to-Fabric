@@ -47,7 +47,8 @@ More was done prior to this date, but I have not recorded actions.
  * [Oct 28-31](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#october-28-31)
    * Restructure architecture of calendar application
    * Investigate how persistence works (using Berkeley DB)
- * Nov 1-3 
+ * Oct 31-Nov 3 
+   * [External Documentation for Calendar](https://k33ty.github.io/Fabric-Calendar/)
    * Reading through more of the Java implementation of the Fabric Language
  * [Nov 4-5](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#november-4-5)
    * Discover important directories in the Fabric Language which will be useful for using the language
@@ -220,7 +221,8 @@ public interface Servlet
 **Trying to understand infrastructure.**
 
 Want to make some diagrams for Calendar application so that I have a clear picture of what needs to be programmed. Wonder if this is how remote Fabric method calls work, the syntax for labelling and annotation is not there):
-![Remote Fabric Call](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Images/FabricRemoteCall.png "remote fabric call")
+
+*removed inaccurage diagram*
 
 I'm also trying to understand how Fabric's implementation of the SIF servlet works. Searching for information about the SIF servlet lead me to an [article](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf) that I skimmed through, but it looks like invaluable information and so I am going to print it out and read it more carefully today.
 
@@ -428,6 +430,9 @@ I had been wondering what pastry was, and am now assuming that it is related to 
 ## October 28-31
 Restructuring code to have the Fabric language be more of a consideration in the design of the architecture.
 Have questions regarding the store that I've been trying to go through Fabric source code to figure out. 
+
+## October 31-November 3
+Working on [External Documentation for Calendar](https://k33ty.github.io/Fabric-Calendar/)
 
 ## November 4-5
 Within the directories: `signatures/fabric/*` there are several useful directories from which objects must inherit in the Calendar implementation. Knowing this helps make the demo code a lot more understandable. Begin going through this code and some of the demos again.
