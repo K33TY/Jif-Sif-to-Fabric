@@ -437,6 +437,8 @@ Working on [External Documentation for Calendar](https://k33ty.github.io/Fabric-
 ## November 4-5
 Within the directories: `signatures/fabric/*` there are several useful directories from which objects must inherit in the Calendar implementation. Knowing this helps make the demo code a lot more understandable. Begin going through this code and some of the demos again.
 
+I had no idea that Java could implement an interface with an inner class, and I'm not sure what doing this causes... (Looking at example code from Fabric examples)
+
 -------------
 
 # List of TODOs
