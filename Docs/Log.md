@@ -52,6 +52,7 @@ More was done prior to this date, but I have not recorded actions.
    * Reading through more of the Java implementation of the Fabric Language
  * [Nov 4-5](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#november-4-5)
    * Discover important directories in the Fabric Language which will be useful for using the language
+   * Trying to figure out what the hardcoded variables might be in the Fabric java classes in the examples
  
 ## Jump to TODO List or Finished Task List.
 
@@ -438,6 +439,15 @@ Working on [External Documentation for Calendar](https://k33ty.github.io/Fabric-
 Within the directories: `signatures/fabric/*` there are several useful directories from which objects must inherit in the Calendar implementation. Knowing this helps make the demo code a lot more understandable. Begin going through this code and some of the demos again.
 
 I had no idea that Java could implement an interface with an inner class, and I'm not sure what doing this causes... (Looking at example code from Fabric examples)
+
+Trying to figure out what the hardcoded variables might be in the Fabric java classes in the examples, (the ones with numbers on the end seem to have some arbitrary number, and not sure what these numbers mean):
+$commit323
+$label30
+$tm235
+$e234
+$currentTid34
+$backOff30
+$classHash
 
 -------------
 
