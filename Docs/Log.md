@@ -53,6 +53,8 @@ More was done prior to this date, but I have not recorded actions.
  * [Nov 4-5](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#november-4-5)
    * Discover important directories in the Fabric Language which will be useful for using the language
    * Trying to figure out what the hardcoded variables might be in the Fabric java classes in the examples
+ * [Nov 6](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Docs/Log.md#november-6)
+   * Learn about closures
  
 ## Jump to TODO List or Finished Task List.
 
@@ -448,6 +450,10 @@ Trying to figure out what the hardcoded variables might be in the Fabric java cl
   * $currentTid34
   * $backOff30
   * $classHash
+  
+## November 6
+Learn about closures since I didn't know what they were, and realizing that it's sprinkled throughout the examples codebase.
+This was a useful Google Tech Talk: https://www.youtube.com/watch?v=0zVizaCOhME
 
 -------------
 
