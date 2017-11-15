@@ -468,7 +468,9 @@ This was a useful Google Tech Talk: https://www.youtube.com/watch?v=0zVizaCOhME
 
 ## November 7
 **Spend time with Tom**
-Tom explained the compiler stack to me, and how some of the strange syntax issues worked.
+Tom explained the compiler stack to me, and how some of the strange syntax issues worked. 
+
+One point to remember: the methods/constructors in Fabric and FabIL have the `where` clause which allows strengthening of policies and ensuring that the correct information flow is required by the methods in question.
 
 ## November 9-12
 **Exploring Fabric language classes and some example files**
