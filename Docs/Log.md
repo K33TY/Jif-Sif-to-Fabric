@@ -538,6 +538,8 @@ Calendar package
     + DateUtil
     + Declassifier
 
+Login Package ("borrowed" from Travel example, but reformatted for readability concerns)
+
 **Writing Methods**
 
 Started writing methods for the calendar application, but having trouble compiling things. Essentially, I'm still very lost as to how classes interweave and who things are instantiated.
