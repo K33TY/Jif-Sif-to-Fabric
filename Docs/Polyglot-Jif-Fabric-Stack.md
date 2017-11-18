@@ -1,5 +1,4 @@
 # Polyglot-Jif-Fabric Stack
-Installation configurations that work on Mac OSX. 
 
 [TL;DR Skip Down to Installation instructions](https://github.com/K33TY/Jif-Sif-to-Fabric/blob/master/Polyglot-Jif-Fabric-Stack.md#install)
 
@@ -16,6 +15,9 @@ I previously attempted to install this environment on Mac OS Yosemite 10.10.5, b
 ---
 
 # Install
+
+## Mac OSX
+Installation configurations that work on Mac OSX. 
 
 ## Prerequisites
 
@@ -146,3 +148,13 @@ polyglot.home=<path>/polyglot
   5. `ant configure`
   6. `ant`
   
+## Ubuntu
+Installation configurations for Ubuntu
+
+## Prerequisites 
+
+  + java-8-openjdk
+  + `export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`
+  + download polyglot and install
+  + `export POLYGLOT=/path/to/polyglot`
+  + install ant `sudo apt install ant`
