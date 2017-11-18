@@ -149,7 +149,7 @@ polyglot.home=<path>/polyglot
   6. `ant`
   
 ## Ubuntu
-Installation configurations for Ubuntu
+Installation configurations for Ubuntu (This is WIP, haven't been able to get this working past the stack compiling and none of the examples are compiling)
 
 ## Prerequisites 
 
