@@ -155,9 +155,8 @@ Installation configurations for Ubuntu (This is WIP, haven't been able to get th
 
 ## Prerequisites 
 
-  + java-8-openjdk
-  + `export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`
-  + download polyglot and install
+  + install oracle java 8 jdk and set JAVA_HOME to location
+  + download polyglot
   + `export POLYGLOT=/path/to/polyglot`
   + install ant `sudo apt install ant`
   + `cd $POLYGLOT/bin`
@@ -166,6 +165,8 @@ Installation configurations for Ubuntu (This is WIP, haven't been able to get th
   + download jif and cd into that directory
   + `cp config.properties.in config.properties`
   + edit config.properties so that polyglot.home is absolute path and set absolute path to jdk
+  + make sure that in your jdk's folder, that you have both `tzdb.dat` and a security directory containing `local_policy.jar` and `us_export_policy.jar`
   + download fabric and cd into that directory
   + `cp config.properties.in config.properties`
   + edit config.properties so that polyglot.home is absolute path to polyglot directory and set jif.home to absolute path to jif directory
+  
