@@ -158,3 +158,12 @@ Installation configurations for Ubuntu
   + download polyglot and install
   + `export POLYGLOT=/path/to/polyglot`
   + install ant `sudo apt install ant`
+  + `cd $POLYGLOT/bin`
+  + `ant`
+  + add `$POLYGLOT/bin` to your path
+  + download jif and cd into that directory
+  + `cp config.properties.in config.properties`
+  + edit config.properties so that polyglot.home is absolute path and set absolute path to jdk
+  + download fabric and cd into that directory
+  + `cp config.properties.in config.properties`
+  + edit config.properties so that polyglot.home is absolute path to polyglot directory and set jif.home to absolute path to jif directory
