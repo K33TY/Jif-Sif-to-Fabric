@@ -162,7 +162,7 @@ Installation configurations for Ubuntu (This is WIP, haven't been able to get th
   + `cd $POLYGLOT/bin`
   + `ant`
   + add `$POLYGLOT/bin` to your path
-  + download jif and cd into that directory
+  + download jif (use the git version and not the release version) and cd into that directory
   + `cp config.properties.in config.properties`
   + edit config.properties so that polyglot.home is absolute path and set absolute path to jdk
   + make sure that in your jdk's folder, that you have both `tzdb.dat` and a security directory containing `local_policy.jar` and `us_export_policy.jar`
