@@ -239,7 +239,7 @@ public interface Servlet
 
 Want to make some diagrams for Calendar application so that I have a clear picture of what needs to be programmed. Wonder if this is how remote Fabric method calls work, the syntax for labelling and annotation is not there):
 
-*removed inaccurage diagram*
+*removed inaccurate diagram*
 
 I'm also trying to understand how Fabric's implementation of the SIF servlet works. Searching for information about the SIF servlet lead me to an [article](http://www.cs.cornell.edu/andru/papers/fabric-sosp09.pdf) that I skimmed through, but it looks like invaluable information and so I am going to print it out and read it more carefully today.
 
